@@ -1,0 +1,116 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #bfdbfe, #c084fc); /* from-blue-200 to-purple-450 */
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 7rem;
+  cursor: pointer;
+}
+
+.login-container {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937; /* dark gray */
+}
+
+.login-container p {
+  font-size: 1rem;
+  color: #6b7280; /* light gray */
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  background-color: #333A5C;
+  margin-bottom: 1rem;
+}
+
+.form-group img {
+  width: 20px;
+  height: 20px;
+}
+
+.form-group input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.password-group {
+  position: relative;
+}
+.eye-icon {
+  cursor: pointer;
+  color: #ccc;
+  margin-left: 8px;
+}
+.eye-icon:hover {
+  color: #999;
+}
+input[type="password"] {
+  font-family: sans-serif;
+}
+.signup-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.signup-link {
+  color: #1d4ed8; /* bleu */
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup-link:hover {
+  color: #2563eb;
+}
+.forgot-password {
+  margin-bottom: 1rem;
+  color: #6366f1; 
+  cursor: pointer;
+  text-align: left; 
+}
+.login-up-button {
+  width: 100%; 
+  padding: 0.625rem 0; 
+  border-radius: 9999px;
+  background: linear-gradient(to right, #6366f1, #312e81); 
+  color: white; 
+  font-weight: 600; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-up-button:hover {
+  background: linear-gradient(to right, #4f46e5, #1e40af); 
+}
