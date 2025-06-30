@@ -13,6 +13,7 @@ export const AppContextProvider = (props) => {
   const [isLoggedin, setIsLoggedin] = useState(false);
   const [userData, setUserData] = useState(false);
 
+
   const getAuthState = async () => {
     try {
       const {data} = await axios.get(backendUrl + '/api/auth/is-auth')
@@ -23,6 +24,7 @@ export const AppContextProvider = (props) => {
     } catch (error) {
       toast.error(error.message)
     }
+
   }
 
   useEffect(() => {
@@ -46,7 +48,8 @@ export const AppContextProvider = (props) => {
     setIsLoggedin,
     userData,
     setUserData,
-    getUserData
+    getUserData,
+
   };
 
   return (

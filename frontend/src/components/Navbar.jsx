@@ -59,7 +59,10 @@ const Navbar = () => {
         {userData.name[0].toUpperCase()}
         <div className="group">
               <ul className="menu-list">
-               
+                 <h1 className="main-title">
+                       Hey {userData ? userData.name : 'Developer'} ! {' '}
+                       <img src={assets.hand_wave} alt="hand wave" className="hand-wave-icon" />
+                     </h1>
                 {!userData.isAccountVerified && <li  onClick={sendVerificationOtp} >Verify email</li>}
                 
                 <li onClick={logout}>Logout</li>

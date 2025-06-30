@@ -70,3 +70,16 @@
 .menu-list li:hover {
   background-color: #e5e7eb;
 }
+.main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.hand-wave-icon {
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+}
