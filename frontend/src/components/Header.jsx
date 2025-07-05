@@ -40,15 +40,14 @@ const Header = () => {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                                     </svg>
                                 </div>
-                                <h2 className="module-title">Bilan de compétences</h2>
+                                <h2 className="module-title">Offres d’emploi</h2>
                             </div>
                             <p className="module-desc">
-                                Évaluation approfondie de vos compétences clés avec analyse SWOT personnalisée. Outils
-                                diagnostiques et recommandations pour votre évolution de carrière.
+                            Trouvez des opportunités adaptées à votre profil parmi des centaines d’offres actualisées chaque jour. Postulez facilement et suivez l’état de vos candidatures.
                             </p>
                         </div>
                         <div className="module-footer">
-                            <button className="module-link blue-link">Commencer l’analyse → </button>
+                            <button onClick={() => navigate("/joblist")} className="module-link blue-link">Rechercher des offres → </button>
                         </div>
                     </div>
 

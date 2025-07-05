@@ -1,0 +1,43 @@
+.findjobs-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.findjobs-filters {
+  width: 20%;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.findjobs-filters h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.filter-section p {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.filter-section label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.findjobs-list {
+  flex: 1;
+}
+
+.findjobs-list-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.findjobs-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

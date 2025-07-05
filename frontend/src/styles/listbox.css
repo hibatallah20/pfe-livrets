@@ -1,0 +1,39 @@
+.listbox-container {
+  width: 8rem;
+}
+
+@media (min-width: 768px) {
+  .listbox-container {
+    width: 10rem;
+  }
+}
+
+.listbox-wrapper {
+  position: relative;
+}
+
+.listbox-select {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.listbox-select:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.3);
+}
+
+.listbox-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #555;
+}
