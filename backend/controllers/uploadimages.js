@@ -13,13 +13,12 @@ export const uploadResumeImages = async (req, res) => {
                 return res.status(400).json({ message: "File upload failed", error: err.message })
             }
             const resumeId = req.params.id;
-            const resume = await Resume.findOne({ _id: resumeId, userId: req.user._id })
+            const resume = await Resume.findOne({ _id: resumeId, userId: req.userId })
 
             if(!resume) {
                 return res.status(404).json({ message: "Resume not found or not authorized" })
             }
 
-            // use process.cwd() to locate uploads folder
             const uploadsFolder = path.join(process.cwd(), "uploads")
             const baseUrl = `${req.protocol}://${req.get("host")}`;
 
@@ -35,7 +34,6 @@ export const uploadResumeImages = async (req, res) => {
                 resume.thumbnailLink = `${baseUrl}/uploads/${newThumbnail.filename}`;
             }
 
-            // same for profile image
             if (newProfileImage) {
                 if (resume.profileInfo?.profilePreviewUrl){
                     const oldProfile = path.join(uploadsFolder, path.basename(resume.profileInfo.profilePreviewUrl));

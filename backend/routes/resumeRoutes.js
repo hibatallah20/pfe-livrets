@@ -1,18 +1,19 @@
 import express from "express";
-import {protect} from '../middleware/resumemiddleware.js';
+/* import {protect} from '../middleware/resumemiddleware.js'; */
+import userAuth from '../middleware/userAuth.js';
 import { createResume, deleteResume, getResumeById, getUserResumes, updateResume } from '../controllers/resumeController.js'
 import { uploadResumeImages} from '../controllers/uploadimages.js'
 
 
 const resumeRouter = express.Router()
 
-resumeRouter.post('/', protect, createResume)
-resumeRouter.get('/', protect, getUserResumes)
-resumeRouter.get('/:id', protect, getResumeById)
+resumeRouter.post('/', userAuth, createResume)
+resumeRouter.get('/', userAuth, getUserResumes)
+resumeRouter.get('/:id', userAuth, getResumeById)
 
-resumeRouter.put('/:id', protect, updateResume)
-resumeRouter.put('/:id/upload-images', protect, uploadResumeImages)
+resumeRouter.put('/:id', userAuth, updateResume)
+resumeRouter.put('/:id/upload-images',userAuth, uploadResumeImages)
 
-resumeRouter.delete('/:id', protect, deleteResume)
+resumeRouter.delete('/:id',userAuth, deleteResume)
 
 export default resumeRouter; 
