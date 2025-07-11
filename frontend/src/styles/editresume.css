@@ -1,0 +1,200 @@
+.editmain {
+  max-width: 80rem; /* ~1280px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  
+}
+
+@media (min-width: 640px) {
+  .editmain {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .editmain {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Header */
+.editheader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: linear-gradient(to right, #ffffff, #ffffff);  
+  border-radius: 1rem;
+  padding: 1px 24px 1px 24px;
+  margin-bottom: 1.5rem;
+  margin-top: 10px;
+  margin-left: 20px;
+
+}
+
+@media (min-width: 640px) {
+  .editheader {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Grid */
+.editgrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .editgrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Form & Preview containers */
+.formContainer,
+.previewContainer {
+  background: white;
+  border: 1px solid #ede9fe;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Preview inner */
+.previewContainer {
+  padding: 1rem;
+}
+
+.previewInner {
+  width: 100%;
+  max-width: 50rem; /* ~800px */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Modal content */
+.modalContent {
+  width: 90vw;
+  height: 80vh;
+}
+
+/* PDF preview */
+.pdfPreview {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Hidden thumbnail */
+.hiddenThumbnail {
+  background: white;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  max-width: 25rem; /* ~400px */
+  margin-left: auto;
+  margin-right: auto;
+}
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem; /* gap-3 = 12px */
+}
+.buttonTheme,
+.buttonDelete,
+.buttonDownload,
+.buttonBack,
+.buttonSave,
+.buttonNext,
+.buttonModalAction {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* gap-2 */
+  font-weight: 700;
+  border-radius: 0.75rem; /* rounded-xl */
+  transition: all 0.2s ease;
+}
+
+/* Theme */
+.buttonTheme {
+  padding: 0.5rem 0.75rem; /* py-2 px-3 sm:px-4 */
+  background: #ede9fe;      /* bg-violet-100 */
+  color: #7c3aed;
+  margin-top: 70px;
+  border: none;
+}
+.buttonTheme:hover {
+  background: #ddd6fe;       /* hover:bg-violet-200 */
+}
+
+/* Delete */
+.buttonDelete {
+  padding: 0.5rem 0.75rem;
+  background: #fee2e2;
+  color: #b91c1c;
+  margin-top: 70px;
+  border: none;
+}
+.buttonDelete:hover {
+  background: #fecaca;
+}
+
+/* Download */
+.buttonDownload {
+  padding: 0.5rem 0.75rem;
+  background: #d1fae5;
+  color: #047857;
+   border: none;
+  margin-top: 70px;
+  margin-right: 100px;
+}
+.buttonDownload:hover {
+  background: #a7f3d0;
+}
+
+/* Back */
+.buttonBack {
+  padding: 0.5rem 1rem;     /* py-2 px-4 sm:px-6 sm:py-3 */
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 0.875rem;
+}
+.buttonBack:hover {
+  background: #e5e7eb;
+}
+
+/* Save */
+.buttonSave {
+  padding: 0.5rem 1rem;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 0.875rem;
+}
+.buttonSave:hover {
+  background: #bfdbfe;
+}
+
+/* Next & Modal Action */
+.buttonNext,
+.buttonModalAction {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, #8b5cf6, #d946ef);
+  color: white;
+  font-size: 0.875rem;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+.buttonNext:hover,
+.buttonModalAction:hover {
+  transform: scale(1.05);
+}

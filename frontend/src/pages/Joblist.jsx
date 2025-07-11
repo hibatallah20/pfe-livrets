@@ -10,6 +10,7 @@ import JobCard from "../components/JobCard";
 import ListBox from "../components/ListBox";
 import ContentCard from "../components/ContentCard";
 import { jobTypes, experience } from "../utils/data";
+import Navbar from '../components/Navbar.jsx'
 
 const Joblist = () => {
   const [sort, setSort] = useState("Newest");
@@ -74,6 +75,8 @@ const Joblist = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="findjobs">
       <ContentCard
         title="Find Your Dream Job"
@@ -133,6 +136,7 @@ const Joblist = () => {
         </div>
       </div>
     </div>
+     </>
   );
 };
 

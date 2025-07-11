@@ -1,0 +1,324 @@
+.inputwrapper {
+  margin-bottom: 1.5rem;
+}
+
+.inputlabel {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+  transition: color 0.2s;
+
+ 
+}
+
+.group:focus-within .inputlabel {
+  color: #7c3aed;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f9fafb;
+  border: 2px solid #d1d5db;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  
+  
+}
+
+.inputContainer:hover {
+  border-color: #9ca3af;
+}
+
+.inputContainer.focused {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.2), 0 10px 15px -3px rgba(139, 92, 246, 0.1);
+}
+
+.inputField {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  color: #1f2937;
+  font-weight: 500;
+  border: none;
+  
+
+}
+
+.inputField::placeholder {
+  color: #6b7280;
+}
+
+.toggleButton {
+  color: #6b7280;
+  transition: color 0.2s, background-color 0.2s;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+ 
+}
+
+.toggleButton:hover {
+  color: #7c3aed;
+  background-color: #f3f4f6;
+}
+
+
+
+.photocontainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+
+.hiddenInput {
+  display: none;
+}
+
+
+.placeholder {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 2px dashed #d1d5db;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .placeholder {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+.placeholder.hovered {
+  border-color: #8b5cf6;
+  background: #f5f3ff;
+}
+
+
+.cameraButton {
+  position: absolute;
+  bottom: -0.5rem;
+  right: -0.5rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #8b5cf6, #d946ef);
+  color: white;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.cameraButton:hover {
+  background: linear-gradient(to right, #7c3aed, #c026d3);
+  transform: scale(1.1);
+}
+
+
+.previewWrapper {
+  position: relative;
+}
+
+/* Preview image container */
+.previewImageContainer {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 4px solid #e5e7eb;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .previewImageContainer {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+.previewImageContainer.hovered {
+  border-color: #a78bfa;
+}
+
+/* Image preview */
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.group:hover .previewImage {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.inputoverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 9999px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.group:hover .inputoverlay {
+  opacity: 1;
+}
+
+/* Action buttons */
+.photoactionButton {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.containerTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 70px;
+}
+
+
+.titleText {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+@media (min-width: 640px) {
+  .titleText {
+    font-size: 1.25rem;
+  }
+}
+
+
+.editButton {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background: #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.editButton:hover {
+  background: #e5e7eb;
+}
+
+
+.editIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #4b5563;
+  transition: color 0.3s ease;
+}
+
+.group:hover .editIcon {
+  color: #8b5cf6;
+}
+
+
+.titleinputField {
+  font-size: 1.125rem;
+  font-weight: 700;
+  background: transparent;
+  outline: none;
+  color: #1f2937;
+  border-bottom: 2px solid #d1d5db;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+@media (min-width: 640px) {
+  .titleinputField {
+    font-size: 1.25rem;
+  }
+}
+
+.titleinputField.focused {
+  border-color: #8b5cf6;
+}
+
+
+.confirmButton {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background: #8b5cf6;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.confirmButton:hover {
+  background: #7c3aed;
+}
+.checkIcon {
+  width: 1.25rem; /* 20px */
+  height: 1.25rem;
+  border: none;
+  outline: none;
+}
+
+/* Bouton blanc avec opacité */
+.actionButtonWhite {
+  background-color: rgba(255, 255, 255, 0.8); /* white/80 */
+  color: #1f2937; /* gray-800 */
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.actionButtonWhite:hover {
+  background-color: white;
+}
+
+/* Bouton rouge */
+.actionButtonRed {
+  background-color: #ef4444; /* red-500 */
+  color: white;
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.actionButtonRed:hover {
+  background-color: #dc2626; /* red-600 */
+}

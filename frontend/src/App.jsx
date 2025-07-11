@@ -10,6 +10,9 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import JobsList from './pages/joblist'
 import Jobdetail from './pages/jobdetail'
+import LandingPage from './pages/LandingPage'
+import Dashboard from './pages/Dashboard'
+import EditResume from './components/EditResume'
 
 
 const App = () => {
@@ -25,6 +28,9 @@ const App = () => {
         <Route path='/livret1/step1' element={<Step1/>}/>
         <Route path='/joblist' element={<JobsList/>}/>
         <Route path='/job-detail/:id' element={<Jobdetail/>}/>
+        <Route path='/resume' element={<LandingPage/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/resume/:resumeId' element={<EditResume/>}/>
       </Routes>
     </div>
   )

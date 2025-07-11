@@ -12,7 +12,7 @@ const Header = () => {
 
 
   return (
-      <div className="header-container">
+      <div className="headers-container">
       {!userData ? (
         <>
           <img src={assets.header_img} alt="Header" className="header-img" />

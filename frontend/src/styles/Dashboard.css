@@ -1,0 +1,265 @@
+/* Container */
+.dashboardcontainer {
+   max-width: 1280px;
+  margin: 2rem;
+  padding: 4rem 4rem;
+}
+
+/* Header */
+.headersWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .headersWrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.headerTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #271111;
+}
+.headerSubtitle {
+  color: #4b5563;
+}
+
+.buttongap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* 16px */
+}
+
+@media (min-width: 640px) {
+  .buttongap {
+    flex-direction: row;
+  }
+}
+
+/* Create Button */
+.createButton {
+  position: relative;
+  display: inline-flex; /* garantit que la taille suit le contenu */
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 3rem;
+  background: linear-gradient(to right, #7c3aed, #d946ef);
+  color: white;
+  font-weight: 700;
+  border: none; /* retire les bordures par défaut */
+  border-radius: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none; /* au cas où */
+}
+.createButton:focus {
+  outline: none;
+  box-shadow: none;
+}
+.createButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px -12px rgba(167, 139, 250, 0.5);
+}
+
+
+
+.createButton:hover .createButtonOverlay {
+  opacity: 1;
+}
+
+/* Content inside the button */
+.createButtonContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* 12px */
+  z-index: 1; /* s’assure d’être au-dessus de l’overlay */
+}
+
+
+
+/* Loading */
+.spinnerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.spinner {
+  border-radius: 9999px;
+  height: 3rem;
+  width: 3rem;
+  border-top: 2px solid #7c3aed;
+  border-bottom: 2px solid #7c3aed;
+  animation: spin 1s linear infinite;
+}
+
+/* Empty State */
+.emptyStateWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+.emptyIconWrapper {
+  background-color: #ede9fe;
+  padding: 1rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+.emptyTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+.emptyText {
+  color: #4b5563;
+  max-width: 28rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem 14rem;
+ 
+}
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* New Resume Card */
+.newResumeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #f5f3ff, #eff6ff);
+  border: 2px dashed #c4b5fd;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  height: 87%;
+    width: 350px;
+}
+.newResumeCard:hover {
+  box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.1);
+  border-color: #8b5cf6;
+}
+.newResumeIcon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #7c3aed, #d946ef);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.newResumeTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.newResumeText {
+  color: #4b5563;
+  text-align: center;
+}
+.modalContainer {
+  max-width: 672px; /* équivalent à max-w-2xl */
+  padding: 1.5rem;  /* équivalent à p-6 */
+  margin: 0 auto;   /* centré */
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.modalHeader {
+  display: block;
+  text-align: start;
+  margin-bottom: 1rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+.modalTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.modalCloseButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.modalCloseButton:hover {
+  color: #374151;
+}
+
+
+/* Delete Confirmation */
+.deleteIconWrapper {
+  background-color: #fee2e2;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+.deleteTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+.deleteText {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+/* Animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.modalBody {
+  padding: 1rem ; 
+ margin-top: 70px;
+ background-color: #ffffff;
+}
+
+.deleteWrapper {
+ margin-top: 40px;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.deleteIcon {
+  color: #ea580c; /* text-orange-600 */
+}

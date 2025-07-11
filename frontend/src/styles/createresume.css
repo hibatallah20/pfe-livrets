@@ -1,0 +1,41 @@
+.createResumeContainer {
+  width: 100%;
+  max-width: 28rem; /* max-w-md = 28*16 = 448px */
+  padding: 2rem;    /* p-8 */
+  background-color: white;
+}
+
+.createResumeTitle {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700;  /* font-bold */
+  color: #111827;    /* text-gray-900 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.createResumeSubtitle {
+  color: #4b5563;    /* text-gray-600 */
+  margin-bottom: 2rem; /* mb-8 */
+}
+.errorMessage {
+  color: #ef4444; /* text-red-500 */
+  font-size: 0.875rem; /* text-sm */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.createResumeButton {
+  width: 100%; /* w-full */
+  padding-top: 0.75rem; /* py-3 */
+  padding-bottom: 0.75rem;
+  background: linear-gradient(to right, #f43f5e, #db2777); /* from-rose-500 to-pink-600 */
+  color: white;
+  font-weight: 900; /* font-black */
+  border-radius: 1rem; /* rounded-2xl */
+  transition: all 0.2s ease; /* transition-all */
+  outline: none; 
+  border: none; 
+}
+
+.createResumeButton:hover {
+  transform: scale(1.05); /* hover:scale-105 */
+  box-shadow: 0 10px 20px rgba(244, 63, 94, 0.2); /* hover:shadow-xl hover:shadow-rose-200 */
+}
