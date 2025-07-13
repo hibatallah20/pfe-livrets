@@ -1,0 +1,125 @@
+.resumeContainer {
+  padding: 1.5rem;
+  background-color: white;
+  font-family: sans-serif;
+  color: #333;
+  transform-origin: top left;
+}
+
+.resumeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.headerName {
+  font-size: 1.875rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.headerDesignation {
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.contactRowGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.contactColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.875rem;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.contactIcon {
+  margin-right: 0.25rem;
+}
+
+.contactLink {
+  text-decoration: none;
+  color: #333;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+.resumeSection {
+  margin-bottom: 1.5rem;
+}
+
+.titleContainer {
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+}
+
+.titleText {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+.titleLine {
+  height: 2px;
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+.sectionParagraph {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sectionList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tagGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tagItem {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  background-color: #bbdefb;
+  border-radius: 0.25rem;
+}

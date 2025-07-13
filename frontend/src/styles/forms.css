@@ -1,0 +1,349 @@
+/* Common styles */
+.trashButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  color: #ef4444;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+.trashButton:hover {
+  background: #fef2f2;
+}
+
+.addButtonBase {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+.addButtonBase:hover {
+  transform: scale(1.05);
+}
+
+/* AdditionalInfoForm */
+.additionalContainer {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #f5f3ff);
+}
+.additionalHeading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+.additionalSectionHeading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dotViolet {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: linear-gradient(to right, #8b5cf6, #d946ef);
+  border-radius: 9999px;
+}
+.dotOrange {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: linear-gradient(to right, #f97316, #ef4444);
+  border-radius: 9999px;
+}
+.languageItem, .interestItem {
+  position: relative;
+  background: white;
+  border: 1px solid #ede9fe;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+.languageItem:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.addButtonLanguage {
+  background: linear-gradient(to right, #8b5cf6, #d946ef);
+}
+.addButtonInterest {
+  background: linear-gradient(to right, #f97316, #ef4444);
+}
+
+/* CertificationInfoForm */
+.certificationContainer {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #ecfdf5);
+}
+.certificationHeading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+.certificationItem {
+  position: relative;
+  background: white;
+  border: 1px solid #d1fae5;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+.certificationItem:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.certificationAddButton {
+  background: linear-gradient(to right, #10b981, #14b8a6);
+}
+
+/* ContactInfoForm */
+.contactContainer {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #eff6ff);
+}
+.contactHeading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+
+/* EducationDetailsForm */
+.educationContainer {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #eef2ff);
+}
+.educationHeading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+.educationItem {
+  position: relative;
+  background: white;
+  border: 1px solid #e0e7ff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+.educationItem:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.educationAddButton {
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+}
+
+/* ProfileInfoForm */
+.profileContainer {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #fff1f2);
+}
+.profileHeading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+.profileTextarea {
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #fecaca;
+  border-radius: 0.75rem;
+  outline: none;
+  resize: none;
+  transition: all 0.2s ease;
+}
+.profileTextarea:focus {
+  border-color: #f87171;
+  box-shadow: 0 0 0 4px #fff1f2;
+}
+
+/* ProjectDetailForm */
+.projectContainer {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #ecfeff);
+}
+.projectHeading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+.projectItem {
+  position: relative;
+  background: white;
+  border: 1px solid #cffafe;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+.projectItem:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.projectTextarea {
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #a5f3fc;
+  border-radius: 0.75rem;
+  outline: none;
+  resize: none;
+  transition: all 0.2s ease;
+}
+.projectTextarea:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 4px #ecfeff;
+}
+.projectAddButton {
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
+}
+
+/* SkillsInfoForm */
+.skillsContainer {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #fffbeb);
+}
+.skillsHeading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+.skillsItem {
+  position: relative;
+  background: white;
+  border: 1px solid #fef3c7;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+.skillsItem:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skillsAddButton {
+  background: linear-gradient(to right, #f59e0b, #f97316);
+}
+
+/* WorkExperienceForm */
+.workContainer {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #f0fdf4);
+}
+.workHeading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+.workItem {
+  position: relative;
+  background: white;
+  border: 1px solid #bbf7d0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+.workItem:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.workTextarea {
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #86efac;
+  border-radius: 0.75rem;
+  outline: none;
+  resize: none;
+  transition: all 0.2s ease;
+}
+.workTextarea:focus {
+  border-color: #4ade80;
+  box-shadow: 0 0 0 4px #f0fdf4;
+}
+.workAddButton {
+  background: linear-gradient(to right, #22c55e, #10b981);
+}
+.mb-10 {
+  margin-bottom: 2.5rem; /* 40px */
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+.mb-4 {
+  margin-bottom: 1rem; /* 16px */
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem; /* 12px */
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem; /* 24px */
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem; /* 16px */
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+}
+
+.gap-6 {
+  gap: 1.5rem; /* 24px */
+}
+
+.items-start {
+  align-items: start;
+}
+
+.block {
+  display: block;
+}
+
+.text-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-slate-700 {
+  color: #374151; /* Slate 700 */
+}
+
+.mt-2 {
+  margin-top: 0.5rem; /* 8px */
+}

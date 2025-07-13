@@ -1,10 +1,10 @@
-/* Container */
+
 .landingcontainer {
   min-height: 100vh;
   background-image: linear-gradient(to bottom right, #f8fafc, #ffffff, #ede9fe);
 }
 
-/* Header */
+
 .landingheader {
   position: fixed;
   top: 0;
@@ -215,7 +215,7 @@
 }
 
 /* Main */
-.main {
+.landingmain {
   padding-top: 6rem; /* pt-24 */
 }
 

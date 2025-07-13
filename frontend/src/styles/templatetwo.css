@@ -1,0 +1,168 @@
+.resumeTwoContainer {
+  padding: 1rem;
+  background: white;
+  font-family: sans-serif;
+  color: #000;
+  max-width: 950px;
+  margin: 0 auto;
+  transform-origin: top left;
+}
+
+.resumeTwoHeader {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.headerName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.headerDesignation {
+  font-size: 0.875rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.contactGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  color: #444;
+}
+
+.contactLink {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+.sectionDivider {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.resumeSection {
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.sectionText {
+  font-size: 0.7rem;
+  line-height: 1.2;
+  color: #333;
+}
+
+.sectionList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experienceItem, .educationItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.experienceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.itemTitle {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.itemSubtitle {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #666;
+}
+
+.itemDuration {
+  font-size: 0.65rem;
+  text-align: right;
+  color: #666;
+}
+
+.techTag {
+  background: #f0f0f0;
+  font-size: 0.6rem;
+  font-family: monospace;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.itemList {
+  font-size: 0.75rem;
+  color: #444;
+  list-style: disc inside;
+}
+
+.itemList li {
+  margin-bottom: 0.25rem;
+}
+
+.itemDescription {
+  font-size: 0.7rem;
+  color: #444;
+}
+
+.linkGroup {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.iconLink:hover {
+  text-decoration: underline;
+}
+
+.skillsList, .certificationsList, .pillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+}
+
+.pillItem {
+  background: #f0f0f0;
+  padding: 0.15rem 0.3rem;
+  border-radius: 9999px;
+}
+
+.twoColumnGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.5rem;
+}

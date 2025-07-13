@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Award, TrendingUp, Zap, Edit, Trash2, Clock } from "react-feather";
+import { Award, TrendingUp, Zap, Edit, Trash2, Clock, Check, Edit2 } from "react-feather";
 import "../styles/ResumeCard.css";
 
 const ResumeCard = ({
@@ -150,5 +150,56 @@ const ResumeCard = ({
     </div>
   );
 };
+
+//TEMPLATE CARD
+export const TemplateCard = ({thumbnailImg, isSelected, onSelect}) => {
+  return (
+    <div
+      className={`template-card ${isSelected ? 'selected' : ''}`}
+      onClick={onSelect}
+    >
+      {thumbnailImg ? (
+        <div className="template-card-image">
+          <img src={thumbnailImg || '/placeholder.svg'} alt="Template Preview" />
+          <div className="template-card-gradient-hover"></div>
+
+          {isSelected && (
+            <div className="template-card-selected-overlay">
+              <div className="template-card-check">
+                <Check size={24} className="text-violet-600" />
+              </div>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className="template-card-empty">
+          <div className="template-card-empty-icon">
+            <Edit2 className="text-white" size={20} />
+          </div>
+          <span className="template-card-empty-text">No Preview</span>
+        </div>
+      )}
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default ResumeCard;

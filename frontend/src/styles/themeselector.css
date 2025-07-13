@@ -1,0 +1,130 @@
+/* === Container === */
+.theme-container {
+  max-width: 80rem; /* ~1280px */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* === Header === */
+.theme-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: linear-gradient(to right, white, #f5f3ff); /* from-white to-violet-50 */
+  border-radius: 1rem;
+  border: 1px solid #ede9fe; /* border-violet-100 */
+}
+
+@media (min-width: 640px) {
+  .theme-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem;
+  }
+}
+
+/* === Apply button === */
+.theme-apply-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #7c3aed, #d946ef); /* from-violet-600 to-fuchsia-600 */
+  color: white;
+  font-weight: 900;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.theme-apply-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+@media (min-width: 640px) {
+  .theme-apply-btn {
+    width: auto;
+  }
+}
+
+/* === Main grid === */
+.theme-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .theme-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* === Template list === */
+.theme-templates {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #f3f4f6; /* border-gray-100 */
+  padding: 1rem;
+  grid-column: span 1;
+}
+
+@media (min-width: 640px) {
+  .theme-templates {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .theme-templates {
+    grid-column: span 2;
+  }
+}
+
+/* Grid inside template list */
+.template-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-height: 60vh;
+  overflow: auto;
+  padding: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .template-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .template-grid {
+    max-height: 70vh;
+  }
+}
+
+/* === Render area === */
+.theme-preview {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #f3f4f6;
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .theme-preview {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .theme-preview {
+    grid-column: span 3;
+  }
+}
