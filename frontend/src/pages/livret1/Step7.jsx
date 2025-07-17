@@ -14,7 +14,7 @@ const data = [
     { number: "05", title: "نصائح عملية لتحديد أي عمل يمكنني أن أبحث", text: "نعرض لك أهم القواعد لمساعدتك على تنظيم و تسهيل عملية البحث عن وظيفة" },
 ];
 
-const Step2 = () => {
+const Step7 = () => {
     return (
         <>
         <Navbar/>
@@ -53,11 +53,11 @@ const Step2 = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <SideLeftRightButtons nextPage="/livret1/step3" />
-                <SideLeftRightButtons prevPage="/livret1/step1" />
+                <SideLeftRightButtons nextPage="/livret1/step8" />
+                <SideLeftRightButtons prevPage="/livret1/step6" />
             </div>
         </>
     )
 }
 
-export default Step2;
+export default Step7;

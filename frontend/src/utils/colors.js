@@ -39,3 +39,4 @@ export const fixTailwindColors = (element) => {
 
   return clone;
 };
+export const text_size = "text-xl";

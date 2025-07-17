@@ -45,8 +45,8 @@ const Login = () => {
     <div className="login-page">
       <img onClick={()=>navigate('/')} src={assets.logo} alt="" className="logo" />
       <div className="login-container">
-        <h2>Login</h2>
-        <p>Login to your account</p>
+        <h2>Connexion</h2>
+        <p>Connectez-vous à votre compte</p>
 
         <form onSubmit={onLoginHandler}>
             {/*CIN*/}
@@ -66,7 +66,7 @@ const Login = () => {
             onChange={e => setPassword(e.target.value)}
             value={password}
             type={showPassword ? 'text' : 'password'}
-            placeholder="Password"
+            placeholder="Mot de passe"
             required
            />
             <span
@@ -76,13 +76,13 @@ const Login = () => {
               {showPassword ? <IoEye size={20} /> : <IoEyeOff size={20} />}
             </span>
           </div>
-          <p onClick={()=>navigate('/reset-password')} className="forgot-password">Forgot password?</p>
-          <button className="login-up-button">Login</button>
+          <p onClick={()=>navigate('/reset-password')} className="forgot-password">Mot de passe oublié ?</p>
+          <button className="login-up-button"> Se connecter</button>
 
            <p className="signup-text">
-           Don't have an account?{' '}
+            Vous n’avez pas de compte ?{' '}
           <Link to="/signup" className="signup-link">
-            Sign Up
+            Inscription
           </Link>
         </p>
         </form>

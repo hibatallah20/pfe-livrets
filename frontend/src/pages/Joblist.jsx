@@ -79,7 +79,6 @@ const Joblist = () => {
     <Navbar />
     <div className="findjobs">
       <ContentCard
-        title="Find Your Dream Job"
         type="home"
         handleClick={() => {}}
         searchQuery={searchQuery}
@@ -90,9 +89,9 @@ const Joblist = () => {
 
       <div className="findjobs-container">
         <div className="findjobs-filters">
-          <h3>Filter Search</h3>
+          <h3>Filtrer la recherche</h3>
           <div className="filter-section">
-            <p><BiBriefcaseAlt2 /> Job Type</p>
+            <p><BiBriefcaseAlt2 /> Type de travail</p>
             {jobTypes.map((type) => (
               <label key={type}>
                 <input
@@ -107,7 +106,7 @@ const Joblist = () => {
           </div>
 
           <div className="filter-section">
-            <p><BsStars /> Experience</p>
+            <p><BsStars /> Expérience</p>
             {experience.map((exp) => (
               <label key={exp.value}>
                 <input
@@ -124,7 +123,7 @@ const Joblist = () => {
 
         <div className="findjobs-list">
           <div className="findjobs-list-header">
-            <span>Showing {filteredJobs.length} Jobs</span>
+            <span>Affichage de {filteredJobs.length} offres</span>
             <ListBox sort={sort} setSort={setSort} />
           </div>
 

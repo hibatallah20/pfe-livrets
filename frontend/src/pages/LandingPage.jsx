@@ -19,32 +19,27 @@ const LandingPage = () => {
                 <div className="heroGrid">
                     {/* Left content */}
                     <div className="heroLeft">
-                        <div className="tagline">
-                            Profrssional Resume Builder
-                        </div>
-
+                       
                         <h1 className="heading">
-                            <span className="headingText">Craft</span>
-                            <span className="headingGradient">Professional</span>
-                            <span className="headingText">Resumes</span>
+                            <span className="headingText">CVGen par Advanced Solutions</span>
+                            <span className="headingGradient">La solution Marocaine pour <br />créer votre CV</span>
+                            <span className="headingText">En Toute Simplicité</span>
                         </h1>
 
                         <p className="description">
-                            Create job-winning resumes with expertly designed templates. ATS-friendly, recruiter-approved, and tailored to your career goals.
+                            Notre outil a été pensé pour vous accompagner pas à pas dans la création de votre CV,tout en garantissant une prise en main rapide et intuitive.Faites le choix de la simplicité et donnez un nouvel élan à votre carrière dès aujourd'hui!
                         </p>
 
                         <div >
                             <button  className="primaryButton" onClick={()=>navigate('/dashboard')}>
                                 <div className="primaryButtonOverlay"></div>
                                 <span className="primaryButtonContent">
-                                    Start Building
+                                    Commencer la création
                                     <FaArrowRight className="primaryButtonIcon" size={18}/>
                                 </span>
                             </button>
 
-                            <button className="secondaryButton" onClick={()=>navigate('/dashboard')}>
-                                View Templates
-                            </button>
+                          
                         </div>
 
                     </div>
@@ -67,25 +62,27 @@ const LandingPage = () => {
         </div>
         <div className="featuresGrid">
       <div className="featureCard ">
-        <h3 className="featureTitle">Lightning Fast</h3>
+        <h3 className="featureTitle">Rapide</h3>
         <p className="featureDescription">
-          Create professional resumes in under 5 minutes with our streamlined process
+          Créez des CV professionnels en moins de 5 minutes grâce à notre processus simplifié.
         </p>
       
       </div>
 
       <div className="featureCard ">
-        <h3 className="featureTitle">Pro Templates</h3>
+        <h3 className="featureTitle">Modèles professionnels</h3>
         <p className="featureDescription">
-          Choose from dozens of recruiter-approved, industry-specific templates
+          Choisissez parmi des dizaines de modèles approuvés par les recruteurs et adaptés à chaque secteur.
         </p>
      
       </div>
 
       <div className="featureCard ">
-        <h3 className="featureTitle">Instant Export</h3>
+        <h3 className="featureTitle">Exportation instantanée</h3>
         <p className="featureDescription">
-          Download high-quality PDFs instantly with perfect formatting
+          Téléchargez des fichiers PDF de haute qualité avec un formatage parfait en un clic.
+
+
         </p>
         
       </div>

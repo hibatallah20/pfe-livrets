@@ -217,54 +217,54 @@ const EditResume = () => {
 
       case "contact-info":
         const { email, phone } = resumeData.contactInfo
-        if (!email.trim() || !/^\S+@\S+\.\S+$/.test(email)) errors.push("Valid email is required.")
-        if (!phone.trim() || !/^\d{10}$/.test(phone)) errors.push("Valid 10-digit phone number is required")
+        if (!email.trim() || !/^\S+@\S+\.\S+$/.test(email)) errors.push("Une adresse e-mail valide est requise.")
+        if (!phone.trim() || !/^\d{10}$/.test(phone)) errors.push("Un numéro de téléphone valide à 10 chiffres est requis.")
         break
 
       case "work-experience":
         resumeData.workExperience.forEach(({ company, role, startDate, endDate }, index) => {
-          if (!company || !company.trim()) errors.push(`Company is required in experience ${index + 1}`)
-          if (!role || !role.trim()) errors.push(`Role is required in experience ${index + 1}`)
-          if (!startDate || !endDate) errors.push(`Start and End dates are required in experience ${index + 1}`)
+          if (!company || !company.trim()) errors.push(`Le champ « Entreprise » est obligatoire dans la section expérience ${index + 1}`)
+          if (!role || !role.trim()) errors.push(`Le champ « Poste » est obligatoire dans la section expérience ${index + 1}`)
+          if (!startDate || !endDate) errors.push(`Les dates de début et de fin sont obligatoires dans la section expérience ${index + 1}`)
         })
         break
 
       case "education-info":
         resumeData.education.forEach(({ degree, institution, startDate, endDate }, index) => {
-          if (!degree.trim()) errors.push(`Degree is required in education ${index + 1}`)
-          if (!institution.trim()) errors.push(`Institution is required in education ${index + 1}`)
-          if (!startDate || !endDate) errors.push(`Start and End dates are required in education ${index + 1}`)
+          if (!degree.trim()) errors.push(`Le diplôme est obligatoire dans la section éducation ${index + 1}`)
+          if (!institution.trim()) errors.push(`L’établissement est obligatoire dans la section éducation ${index + 1}`)
+          if (!startDate || !endDate) errors.push(`Les dates de début et de fin sont obligatoires dans la section éducation ${index + 1}`)
         })
         break
 
       case "skills":
         resumeData.skills.forEach(({ name, progress }, index) => {
-          if (!name.trim()) errors.push(`Skill name is required in skill ${index + 1}`)
+          if (!name.trim()) errors.push(`Le nom de la compétence est obligatoire dans la section compétences ${index + 1}`)
           if (progress < 1 || progress > 100)
-            errors.push(`Skill progress must be between 1 and 100 in skill ${index + 1}`)
+            errors.push(`Le niveau de compétence doit être compris entre 1 et 100 dans la section compétences ${index + 1}`)
         })
         break
 
       case "projects":
         resumeData.projects.forEach(({ title, description }, index) => {
-          if (!title.trim()) errors.push(`Project Title is required in project ${index + 1}`)
-          if (!description.trim()) errors.push(`Project description is required in project ${index + 1}`)
+          if (!title.trim()) errors.push(`Le titre du projet est obligatoire dans la section projets ${index + 1}`)
+          if (!description.trim()) errors.push(`La description du projet est obligatoire dans la section projets ${index + 1}`)
         })
         break
 
       case "certifications":
         resumeData.certifications.forEach(({ title, issuer }, index) => {
-          if (!title.trim()) errors.push(`Certification Title is required in certification ${index + 1}`)
-          if (!issuer.trim()) errors.push(`Issuer is required in certification ${index + 1}`)
+          if (!title.trim()) errors.push(`Le titre de la certification est obligatoire dans la section certifications ${index + 1}`)
+          if (!issuer.trim()) errors.push(`L’organisme délivrant la certification est obligatoire dans la section certifications ${index + 1}`)
         })
         break
 
       case "additionalInfo":
         if (resumeData.languages.length === 0 || !resumeData.languages[0].name?.trim()) {
-          errors.push("At least one language is required")
+          errors.push("Au moins une langue est requise")
         }
         if (resumeData.interests.length === 0 || !resumeData.interests[0]?.trim()) {
-          errors.push("At least one interest is required")
+          errors.push("Au moins un centre d’intérêt est requis")
         }
         break
 
@@ -680,18 +680,18 @@ const EditResume = () => {
             <div className="FlexContainer">
                 <button onClick={() => setOpenThemeSelector(true)} className="buttonTheme">
                     <BiPalette size={16} />
-                    <span>Theme</span>
+                    <span>Thème</span>
             </button>
 
             <button onClick={handleDeleteResume } className="buttonDelete" disabled={isLoading}>
                 <Trash2 size={16} />
-                <span>Delete</span>
+                <span>Supprimer</span>
 
             </button>
 
             <button onClick={() => setOpenPreviewModal(true)} className="buttonDownload">
               <Download size={16} />
-              <span>Preview</span>
+              <span>Aperçu</span>
             </button>
             </div>
             </div>
@@ -710,13 +710,13 @@ const EditResume = () => {
                   <div className="end-container">
                     <button className="buttonBack" onClick={goBack} disabled={isLoading}>
                       <ArrowLeft size={16} />
-                      Back
+                      Retour
                     </button>
 
                     <button className="buttonSave" onClick={uploadResumeImages} disabled={isLoading}>
                       {isLoading ? <Loader size={16} className="animate-spin" />
                       : <Save size={16} />}
-                      {isLoading ? "Saving..." : "Save & Exit"}
+                      {isLoading ? "Enregistrement en cours..." : "Enregistrer & quitter"}
                     </button>
                     <button className="buttonNex" onClick={validateAndNext} disabled={isLoading}>
                       {currentPage === "additionalInfo" && <Download size={16} />}
@@ -731,7 +731,7 @@ const EditResume = () => {
                 <div className="text-center-mb4">
                   <div className="status-completionBadge">
                     <div className="icon-pulseDot"></div>
-                    <span>Preview - {completionPercentage}% Complete</span>
+                    <span>Aperçu - {completionPercentage}% terminé</span>
                   </div>
                 </div>
                 <div className="preview-container relative" ref={previewContainerRef}>
@@ -761,7 +761,7 @@ const EditResume = () => {
         <Modal isOpen={openPreviewModal} onClose={() => setOpenPreviewModal(false)}
         title={resumeData.title}
         showActionBtn
-        actionBtnText={isDownloading ? "Generating..." : downloadSuccess ? "Download!" : "Download PDF"}
+        actionBtnText={isDownloading ? "Génération en cours..." : downloadSuccess ? "Télécharger!" : "Télécharger en PDF"}
 
         actionBtnIcon={
           isDownloading ? (
@@ -779,7 +779,7 @@ const EditResume = () => {
           <div className="text-center-margin">
             <div className="status-modalBadge">
               <div className="icon-pulseDot">
-                <span>Completion: {completionPercentage}%</span>
+                <span>Progression : {completionPercentage}%</span>
               </div>
             </div>
             <div className="pdfPreview">

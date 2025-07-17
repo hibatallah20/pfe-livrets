@@ -1,0 +1,82 @@
+.step9-container {
+    text-align: right;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.step9-header {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.step9-title {
+    font-size: 1.5rem; /* ~ text-2xl */
+    font-weight: bold;
+    color: #701A75; /* fuchsia-900 */
+}
+
+.step9-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+.step9-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.step9-thead-row {
+    background-color: #F3E8FF; /* fuchsia-100 */
+}
+
+.step9-th, .step9-td {
+    padding: 0.75rem;
+    border: 1px solid #D1D5DB; /* gray-300 */
+}
+
+.step9-tr {
+    background-color: #ffffff;
+}
+
+.step9-tr-completed {
+    background-color: #ECFDF5; /* green-50 */
+}
+
+.step9-td-checklist {
+    border: 1px solid #D1D5DB;
+    display: flex;
+    justify-content: center;
+}
+
+.step9-ul-checklist {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.step9-ul-tasks {
+    padding-right: 1.25rem;
+    list-style: none;
+}
+
+.step9-task-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.step9-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    background-color: #A21CAF; /* fuchsia-700 */
+}
+
+.step9-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: #A21CAF; /* fuchsia-700 */
+}

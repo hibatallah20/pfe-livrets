@@ -51,8 +51,8 @@ const Signup = () => {
     <div className="login-page">
       <img onClick={()=>navigate('/')} src={assets.logo} alt="" className="logo" />
       <div className="login-container">
-        <h2>Create Account</h2>
-        <p>Create your account</p>
+        <h2>Créer un compte</h2>
+        <p>Créez votre compte</p>
 
         <form onSubmit={onSignupHandler}>
           {/* Full Name */}
@@ -61,7 +61,7 @@ const Signup = () => {
             <input 
             onChange={e => setName(e.target.value)}
             value={name}
-            type="text" placeholder="Full Name" required />
+            type="text" placeholder="Nom complet" required />
           </div>
 
             {/*CIN*/}
@@ -79,7 +79,7 @@ const Signup = () => {
             <input
             onChange={e => setEmail(e.target.value)}
             value={email} 
-            type="email" placeholder="Email ID" required />
+            type="email" placeholder="Adresse e-mail" required />
           </div>
 
           {/* Password */}
@@ -89,7 +89,7 @@ const Signup = () => {
             onChange={e => setPassword(e.target.value)}
             value={password}
             type={showPassword ? 'text' : 'password'}
-            placeholder="Password"
+            placeholder="Mot de passe"
             required
            />
             <span
@@ -99,12 +99,12 @@ const Signup = () => {
               {showPassword ? <IoEye size={20} /> : <IoEyeOff size={20} />}
             </span>
           </div>
-          <button className="sign-up-button">Sign up</button>
+          <button className="sign-up-button">Inscription</button>
 
            <p className="signup-text">
-           Already have an account?{' '}
+           Vous avez déjà un compte ?{' '}
           <Link to="/login" className="login-link">
-            Login
+            Connexion
           </Link>
         </p>
         </form>

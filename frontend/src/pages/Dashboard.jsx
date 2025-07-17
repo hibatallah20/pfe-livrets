@@ -147,9 +147,9 @@ const Dashboard = () => {
         <div className="dashboardcontainer">
             <div className="headersWrapper">
                 <div>
-                    <h1 className="headerTitle">My Resume</h1>
+                    <h1 className="headerTitle">Mon CV</h1>
                     <p className="headerSubtitle">
-                        {allResumes.length > 0 ? `You have ${allResumes.length} resumes${allResumes.length !== 1 ? 's' : ''}`
+                        {allResumes.length > 0 ? `Vous avez ${allResumes.length} CV${allResumes.length !== 1 ? 's' : ''}`
                         : 'Start building your professional resume'}
                     </p>
                 </div>
@@ -158,7 +158,7 @@ const Dashboard = () => {
                     <button className="createButton" onClick={() => setOpenCreateModal(true)}>
                        
                             <span className="createButtonContent">
-                                Create Now
+                                Créer maintenant
                                 <FiFile size={18}/>
                             </span>
                     </button>
@@ -177,14 +177,14 @@ const Dashboard = () => {
                     <div className="emptyIconWrapper">
                         <FiFile size={32} color="#7c3aed"/>
                     </div>
-                    <h3 className="emptyTitle">No Resumes Yet</h3>
+                    <h3 className="emptyTitle">Pas encore de CV disponible</h3>
                     <p className="emptyText">
-                        You haven't created any resumes yet. Start building your professional resume to land your dream job.
+                        Vous n’avez encore créé aucun CV. Commencez dès maintenant à construire votre CV professionnel pour décrocher l’emploi de vos rêves.
                     </p>
                     <button className="createButton" onClick={() => 
                       setOpenCreateModal(true)}>
                         <span className="createButtonContent">
-                            Create Your First Resume
+                            Créez votre premier CV
                             <FiFile size={20} />
                         </span>
                     </button>
@@ -197,8 +197,8 @@ const Dashboard = () => {
                         <div className="newResumeIcon">
                              <FiFile size={32} />
                         </div>
-                        <h3 className="newResumeTitle">Create New Resume</h3>
-                        <p className="newResumeText">Start building your career</p>
+                        <h3 className="newResumeTitle">Créer un nouveau CV</h3>
+                        <p className="newResumeText">Commencez à construire votre carrière</p>
                     </div>
                     {allResumes.map((resume) => (
                         <ResumeCard key={resume._id} imgUrl={resume.thumbnailLink}
@@ -217,7 +217,7 @@ const Dashboard = () => {
              <Modal isOpen={openCreateModal} onClose={()=> setOpenCreateModal(false)} hideHeader >
                 <div className="modalHeader">
                     <h3 className="modalTitle">
-                        Create New Resumes
+                        Créer de nouveaux CV
                     </h3>
                     <CreateResumeForm onSuccess={() => {
                         setOpenCreateModal(false);
@@ -240,9 +240,9 @@ const Dashboard = () => {
                <div className="deleteIconWrapper">
                 <FiTrash2 className="deleteIcon" size={24} />
                </div>
-               <h3 className="deleteTitle">Delete Resume?</h3>
+               <h3 className="deleteTitle">Supprimer le CV?</h3>
                <p className="deleteText">
-                 Are you sure you want to delete this resume? This action cannot be undone.
+                 Êtes-vous sûr de vouloir supprimer ce CV ? Cette action est irréversible.
                 </p>
                </div>
                 </div>

@@ -15,12 +15,16 @@ const Header = () => {
       <div className="headers-container">
       {!userData ? (
         <>
-          <img src={assets.header_img} alt="Header" className="header-img" />
-          <h1>Welcome to our app</h1>
-          <p className="subtitle">Let's start with a quick product tour</p>
+      
+          <div className="header-text">
+          <h1>Boostez votre avenir</h1>
+          <p className="firstsubtitle">Trouvez des offres d'emploi et créez votre CV facilement.<br />
+            Explorez nos livrets pour avancer dans votre carrière.</p>
           <button onClick={() => navigate('/signup')} className="get-started-btn">
-            Get Started
+            Commencer
           </button>
+          </div>
+        <img src={assets.header_img} alt="Header" className="header-img" />
         </>
       ) : (
         <div className="accueil">
@@ -68,7 +72,7 @@ const Header = () => {
                             </p>
                         </div>
                         <div className="module-footer">
-                            <button className="module-link green-link">Créer mon CV →</button>
+                            <button className="module-link green-link" onClick={() => navigate("/resume")} >Créer mon CV →</button>
                         </div>
                     </div>
 

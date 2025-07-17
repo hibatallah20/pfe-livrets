@@ -14,7 +14,7 @@ const CreateResumeForm = () => {
     e.preventDefault();
 
     if(!title) {
-      setError("Please enter resume title ")
+      setError("Veuillez saisir le titre du CV ")
       return
     }
     setError("")
@@ -32,15 +32,15 @@ const CreateResumeForm = () => {
         setError(error.response.data.message)
       }
       else {
-        setError('Something went wrong.Please try again')
+        setError('Une erreur s’est produite. Veuillez réessayer.')
       }
     }
   }
   return (
     <div className="createResumeContainer">
-      <h3 className="createResumeTitle">Create New Resume</h3>
+      <h3 className="createResumeTitle">Créer un nouveau CV</h3>
       <p className="createResumeSubtitle">
-        Give your resume a title to get started. You can customize everything later.
+        Donnez un titre à votre CV pour commencer. Vous pourrez tout personnaliser par la suite.
       </p>
 
       <form onSubmit={handleCreateResume}>
@@ -50,7 +50,7 @@ const CreateResumeForm = () => {
 
           {error && <p className="errorMessage">{error}</p>}
           <button type='submit' className="createResumeButton">
-           Create Resume
+           Créer un CV
           </button>
       </form>
 

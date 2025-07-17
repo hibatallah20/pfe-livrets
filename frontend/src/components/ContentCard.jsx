@@ -44,13 +44,13 @@ const Header = ({
 
         <div className="search-bar">
           <SearchInput
-            placeholder="Job Title or Keywords"
+            placeholder="Intitulé du poste ou mots-clés "
             icon={<AiOutlineSearch />}
             value={searchQuery}
             setValue={setSearchQuery}
           />
           <SearchInput
-            placeholder="Add Country or City"
+            placeholder="Ajoutez un pays ou une ville"
             icon={<CiLocationOn />}
             value={location}
             setValue={setLocation}
@@ -60,7 +60,7 @@ const Header = ({
           <div>
             <CustomButton
               onClick={handleClick}
-              title="Search"
+              title="Chercher"
               containerStyles="custom-button"
             />
           </div>
@@ -77,9 +77,7 @@ const Header = ({
         )}
       </div>
 
-      <div className="hero-image-container">
-        <img src={HeroImage} alt="Hero" />
-      </div>
+    
     </div>
   );
 };

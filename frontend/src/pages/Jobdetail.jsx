@@ -42,9 +42,9 @@ const Jobdetail = () => {
       });
   }, [id]);
 
-  if (loading) return <p>Loading job details...</p>;
-  if (error) return <p>Error: {error}</p>;
-  if (!job) return <p>No job found</p>;
+  if (loading) return <p>Chargement des détails de l'offre...</p>;
+  if (error) return <p>Erreur: {error}</p>;
+  if (!job) return <p>Aucun poste trouvé</p>;
 
   return (
     <div className="container">
@@ -76,22 +76,22 @@ const Jobdetail = () => {
 
           <div className="job-stats">
             <div className="stat-box stat-salary">
-              <span className="stat-label">Salary</span>
+              <span className="stat-label">Salaire</span>
               <p className="stat-value">$ {job.salary ?? "-"}</p>
             </div>
 
             <div className="stat-box stat-job-type">
-              <span className="stat-label">Job Type</span>
+              <span className="stat-label">Type de travail</span>
               <p className="stat-value">{job.jobType ?? "-"}</p>
             </div>
 
             <div className="stat-box stat-applicants">
-              <span className="stat-label">No. of Applicants</span>
+              <span className="stat-label">No. de postulants</span>
               <p className="stat-value">{job.application?.length ?? 0}K</p>
             </div>
 
             <div className="stat-box stat-vacancies">
-              <span className="stat-label">No. of Vacancies</span>
+              <span className="stat-label">No. de postes à pourvoir</span>
               <p className="stat-value">{job.vacancies}</p>
             </div>
           </div>
@@ -101,28 +101,28 @@ const Jobdetail = () => {
               onClick={() => setSelected("0")}
               className={`toggle-btn ${selected === "0" ? "selected" : ""}`}
             >
-              Job Description
+              Description du poste
             </button>
 
             <button
               onClick={() => setSelected("1")}
               className={`toggle-btn ${selected === "1" ? "selected" : ""}`}
             >
-              Company
+              Entreprise
             </button>
           </div>
 
           <div className="job-detail-section">
             {selected === "0" ? (
               <>
-                <p>Job Description</p>
+                <p>Description du poste</p>
                 <span>
                   {job.detail?.[0]?.desc ?? "No description available."}
                 </span>
 
                 {job.detail?.[0]?.requirements && (
                   <>
-                    <p style={{ marginTop: "2rem" }}>Requirements</p>
+                    <p style={{ marginTop: "2rem" }}>Critères</p>
                     <span>{job.detail[0].requirements}</span>
                   </>
                 )}
@@ -138,24 +138,22 @@ const Jobdetail = () => {
                   </span>
                 </div>
 
-                <p>About Company</p>
-                <span>{job.about ?? "No company description."}</span>
+                <p>À propos de l’entreprise</p>
+                <span>{job.about ?? "Aucune description de l’entreprise."}</span>
               </>
             )}
           </div>
 
-          <div>
-            <button className="apply-btn">Apply Now</button>
-          </div>
+          
         </div>
 
         {/* RIGHT SIDE */}
         <div className="right-side">
-          <p className="similar-jobs-title">Similar Job Post</p>
+          <p className="similar-jobs-title">Offres d’emploi similaires</p>
 
           <div className="similar-jobs-list">
             {similarJobs.length === 0 ? (
-              <p>No similar jobs found.</p>
+              <p>Aucune offre similaire trouvée.</p>
             ) : (
               similarJobs.map((jobItem) => (
                 <JobCard job={jobItem} key={jobItem._id} />

@@ -1,8 +1,8 @@
 import React from "react";
 import { BsCheck2, BsChevronExpand } from "react-icons/bs";
-import "../styles/ListBox.css"; // ton fichier CSS classique
+import "../styles/ListBox.css"; 
 
-const options = ["Newest", "Oldest", "A-Z", "Z-A"];
+const options = ["Les plus récentes", "Les plus anciennes", "A-Z", "Z-A"];
 
 const ListBox = ({ sort, setSort }) => {
   return (

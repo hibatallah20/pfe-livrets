@@ -68,7 +68,7 @@ const ResumeCard = ({
      <span className="emptyPreviewText">{title}</span>
 
      <div className="sectionChips">
-      {["Profile", "Work", "Skills", "Edu"].map((section, i) => (
+      {["Profil", "Travail", "Compétences", "Édu"].map((section, i) => (
        <div
         key={i}
         className={
@@ -115,8 +115,8 @@ const ResumeCard = ({
             <h5 className="title">{title}</h5>
             <div className="dateInfo">
               <Clock size={12} />
-              <span>Created At: {formattedCreatedDate}</span>
-              <span className="ml-2">Updated At: {formattedUpdatedDate}</span>
+              <span>Créé le : {formattedCreatedDate}</span>
+              <span className="ml-2">Mis à jour le : {formattedUpdatedDate}</span>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@ const ResumeCard = ({
               ? "Almost There"
               : "Ready to Go!"}
           </span>
-          <span className="font-bold">{completion}% Complete</span>
+          <span className="font-bold">{completion}% terminé</span>
         </div>
       </div>
     </div>
@@ -176,7 +176,7 @@ export const TemplateCard = ({thumbnailImg, isSelected, onSelect}) => {
           <div className="template-card-empty-icon">
             <Edit2 className="text-white" size={20} />
           </div>
-          <span className="template-card-empty-text">No Preview</span>
+          <span className="template-card-empty-text">Aucun aperçu</span>
         </div>
       )}
     </div>

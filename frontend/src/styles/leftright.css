@@ -1,0 +1,49 @@
+
+.buttons-container {
+    position: relative;
+    z-index: 10;
+    
+}
+
+
+.right-button-container {
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: right 0.3s ease;
+
+    bottom: 590px;
+}
+
+.right-button-container:hover {
+    right: 18px;
+}
+
+.left-button-container {
+    position: absolute;
+    left: 20px;
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+    bottom: 590px;
+}
+
+.left-button-container:hover {
+    left: 18px;
+}
+
+
+.right-button, .left-button {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(217, 70, 239, 0.65);
+    transition: background-color 0.3s ease;
+}
+
+.right-button:hover, .left-button:hover {
+    background-color: rgba(217, 70, 239, 0.8);
+}
+
+
+.buttons-icon {
+    font-size: 50px;
+}

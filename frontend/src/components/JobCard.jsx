@@ -8,11 +8,11 @@ const JobCard = ({ job }) => {
     <Link to={`/job-detail/${job?._id}`} className="job-card-link">
       <div className="job-card">
         <div className="job-card-top">
-          <img
+         {/*  <img
             src={job?.company?.profileUrl}
             alt={job?.company?.name}
             className="job-card-img"
-          />
+          /> */}
 
           <div>
             <p className="job-card-title">{job?.jobTitle}</p>

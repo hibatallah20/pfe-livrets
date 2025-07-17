@@ -1,0 +1,23 @@
+.step2-container {
+    text-align: right;
+    margin: 5.5rem;
+}
+
+.step2-header {
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.step2-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #701a75; /* equivalent to text-fuchsia-900 */
+}
+
+.step2-grid {
+    padding: 1rem;
+}
+
+.step2-grid-item {
+    margin-bottom: 1.5rem;
+}

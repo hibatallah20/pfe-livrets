@@ -22,7 +22,7 @@ export function inlineAllComputedStyles(rootElement) {
       const prop = cs[i];
       const val  = cs.getPropertyValue(prop);
 
-      // ✂️ Skip any unsupported OKLCH color functions
+    
       if (val.includes("oklch(")) continue;
 
       cssText += `${prop}:${val};`;

@@ -14,7 +14,7 @@ const DashboardLayout = ({ activeMenu, children }) => {
         </div>
       ) : (
         <div className="loadingOrError">
-          Loading user data...
+          Chargement des données utilisateur...
         </div>
       )}
     </div>
