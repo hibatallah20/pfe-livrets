@@ -26,7 +26,7 @@
   width: 100%; /* w-full */
   padding-top: 0.75rem; /* py-3 */
   padding-bottom: 0.75rem;
-  background: linear-gradient(to right, #f43f5e, #db2777); /* from-rose-500 to-pink-600 */
+  background: linear-gradient(to right, #27a05c, #3461b1); /* from-rose-500 to-pink-600 */
   color: white;
   font-weight: 900; /* font-black */
   border-radius: 1rem; /* rounded-2xl */

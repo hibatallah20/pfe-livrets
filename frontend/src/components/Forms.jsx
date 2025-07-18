@@ -292,30 +292,30 @@ export const EducationDetailsForm = ({ educationInfo, updateArrayItem, addArrayI
 export const ProfileInfoForm = ({ profileData, updateSection }) => {
   return (
     <div className="profileContainer">
-      <h2 className="profileHeading">Personal Information</h2>
+      <h2 className="profileHeading">Informations personnelles</h2>
 
       <div className="space-y-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Input
-            label="Full Name"
-            placeholder="John Doe"
+            label="Nom Complet"
+            placeholder="Marie Dupont"
             value={profileData.fullName || ""}
             onChange={({ target }) => updateSection("fullName", target.value)}
           />
 
           <Input
-            label="Designation"
-            placeholder="Full Stack Developer"
+            label="Poste"
+            placeholder="Développeur Full Stack"
             value={profileData.designation || ""}
             onChange={({ target }) => updateSection("designation", target.value)}
           />
 
           <div className="md:col-span-2">
-            <label className="block text-sm font-bold text-slate-700 mb-3">Summary</label>
+            <label className="block text-sm font-bold text-slate-700 mb-3">Résumé</label>
             <textarea
               className="profileTextarea"
               rows={4}
-              placeholder="Short introduction about yourself"
+              placeholder="Brève présentation de vous-même"
               value={profileData.summary || ""}
               onChange={({ target }) => updateSection("summary", target.value)}
             />

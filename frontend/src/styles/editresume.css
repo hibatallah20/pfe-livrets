@@ -94,6 +94,7 @@
 /* PDF preview */
 .pdfPreview {
   width: 100%;
+  height: 400px;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -184,6 +185,8 @@
   background: #f3f4f6;
   color: #374151;
   font-size: 0.875rem;
+  outline: none;
+  border: none;
 }
 
 .buttonBack:hover {
@@ -196,6 +199,8 @@
   background: #dbeafe;
   color: #1d4ed8;
   font-size: 0.875rem;
+  outline: none;
+  border: none;
 }
 
 .buttonSave:hover {
@@ -206,10 +211,13 @@
 .buttonNext,
 .buttonModalAction {
   padding: 0.5rem 1rem;
-  background: linear-gradient(to right, #8b5cf6, #d946ef);
+  background: linear-gradient(to right, #27a05c, #3461b1);
   color: white;
   font-size: 0.875rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  margin-right: 10px;
 }
 
 .buttonNext:hover,

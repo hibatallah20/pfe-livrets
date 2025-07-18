@@ -48,7 +48,7 @@ const ThemeSelector = ({selectedTheme, setSelectedTheme, resumeData, onClose}) =
                 className="theme-apply-btn"
                 onClick={handleThemeSelection}
             >
-                <Check size={18} /> Apply Changes
+                <Check size={18} /> Appliquer les modifications
             </button>
         </div>
 

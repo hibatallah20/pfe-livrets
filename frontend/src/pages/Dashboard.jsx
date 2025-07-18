@@ -150,7 +150,7 @@ const Dashboard = () => {
                     <h1 className="headerTitle">Mon CV</h1>
                     <p className="headerSubtitle">
                         {allResumes.length > 0 ? `Vous avez ${allResumes.length} CV${allResumes.length !== 1 ? 's' : ''}`
-                        : 'Start building your professional resume'}
+                        : 'Commencer a créer votre cv'}
                     </p>
                 </div>
 

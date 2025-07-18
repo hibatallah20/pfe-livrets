@@ -123,7 +123,7 @@ const TemplateOne = ({ resumeData = {}, colorPalette, containerWidth }) => {
         <div className="leftColumn">
           {workExperience.length > 0 && (
             <div className="resumeSection">
-              <Title text="Work Experience" />
+              <Title text="Expérience professionnelle" />
               <div className="sectionList">
                 {workExperience.map((exp, i) => (
                   <WorkExperience
@@ -141,7 +141,7 @@ const TemplateOne = ({ resumeData = {}, colorPalette, containerWidth }) => {
 
           {projects.length > 0 && (
             <div className="resumeSection">
-              <Title text="Projects" />
+              <Title text="Projets" />
               <div className="sectionList">
                 {projects.map((proj, i) => (
                   <ProjectInfo
@@ -161,7 +161,7 @@ const TemplateOne = ({ resumeData = {}, colorPalette, containerWidth }) => {
         <div className="rightColumn">
           {skills.length > 0 && (
             <div className="resumeSection">
-              <Title text="Skills" />
+              <Title text="Compétences" />
               <div className="tagGroup">
                 {skills.map((skill, i) => (
                   <span key={i} className="tagItem">{skill.name}</span>
@@ -172,7 +172,7 @@ const TemplateOne = ({ resumeData = {}, colorPalette, containerWidth }) => {
 
           {education.length > 0 && (
             <div className="resumeSection">
-              <Title text="Education" />
+              <Title text="Formation" />
               <div className="sectionList">
                 {education.map((edu, i) => (
                   <EducationInfo
@@ -204,7 +204,7 @@ const TemplateOne = ({ resumeData = {}, colorPalette, containerWidth }) => {
 
           {languages.length > 0 && (
             <div className="resumeSection">
-              <Title text="Languages" />
+              <Title text="Langues" />
               <div className="tagGroup">
                 {languages.map((lang, i) => (
                   <span key={i} className="tagItem">{lang.name}</span>
@@ -215,7 +215,7 @@ const TemplateOne = ({ resumeData = {}, colorPalette, containerWidth }) => {
 
           {interests.length > 0 && interests.some(i => i) && (
             <div className="resumeSection">
-              <Title text="Interests" />
+              <Title text="Centres d’intérêt" />
               <div className="tagGroup">
                 {interests.map((int, i) => int && (
                   <span key={i} className="tagItem">{int}</span>

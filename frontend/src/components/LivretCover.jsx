@@ -2,13 +2,14 @@ import React from 'react'
 import CardMUI  from './LivretCard'
 import '../styles/livretcover.css'
 import image1 from '../assets/img1.jpeg';
+import OIP from '../assets/OIP.webp'
 
 export const LivretCover = ({ header, title, subTitle, text, content }) => {
     return (
         <div className="cardmiu-cover-container">
             <div className="cardmiu-cover-background">
                 <img
-                    src={image1}
+                    src={OIP}
                     alt="Background"
                     className="cardmiu-cover-background-img"
                 />

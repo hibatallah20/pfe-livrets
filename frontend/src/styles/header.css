@@ -1,7 +1,7 @@
 .headers-container {
   display: flex;
-  align-items: center; 
-  justify-content: space-between; 
+   align-items: center;        /* centre verticalement */
+  justify-content: center;
   text-align: left;
   gap: 0.5rem;          
   padding: 4rem 2rem 2rem;
@@ -10,23 +10,48 @@
  
 }
 
-
 .header-img {
-  width: 15rem;
-  height: auto;
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  margin-right: 10px;
+  z-index: 0; /* derrière le texte */
+}
+.headers-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Sombre à 50% */
+  z-index: 1;
 }
 .header-text {
+  position: relative;
+  z-index: 1;
+  color: white;
+  max-width: 600px;
+  text-align: center; 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.6rem;
+  align-items: center; 
+  justify-content: center;
+  gap: 0px;
 }
 .header-text h1 {
-  color: #20B2AA;
-  margin-top: 10px;
+  background: linear-gradient(90deg, #28a745, #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-top: 100px;
+   font-weight: 700; /* pour un texte bien marqué */
+  font-size: 3rem;
+ /*  background-clip: text;
+  background: linear-gradient(90deg, #20B2AA, #007bff); */
 
 }
 
@@ -48,7 +73,7 @@
 
 .firstsubtitle {
   font-size: 0.9rem;
-  color: #2a2c2e;
+  color: #ffffff;
   font-weight: 500;
 
 }
@@ -64,6 +89,7 @@
   font-size: 1rem;
   transition: background-color 0.3s;
   outline: none;
+  margin-top: 26px;
 }
 
 .get-started-btn:hover {

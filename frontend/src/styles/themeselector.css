@@ -33,12 +33,14 @@
   justify-content: center;
   gap: 0.75rem;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(to right, #7c3aed, #d946ef); /* from-violet-600 to-fuchsia-600 */
+  background: linear-gradient(to right, #27a05c, #3461b1); /* from-violet-600 to-fuchsia-600 */
   color: white;
   font-weight: 900;
   border-radius: 1rem;
   transition: all 0.3s;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: none;
+  outline: none;
 }
 
 .theme-apply-btn:hover {

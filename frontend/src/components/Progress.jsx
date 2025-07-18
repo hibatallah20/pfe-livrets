@@ -10,7 +10,7 @@ const Progress = ({progress = 0, total = 5, color, bgColor}) => {
           className={`progress-dot ${index < progress ? "progress-filled" : "progress-empty"}`}
           style={{
             backgroundColor: index < progress
-              ? color || "#06b6d4"
+              ? color || "#c4dadeff"
               : bgColor || "#cffafe"
           }}
         ></div>

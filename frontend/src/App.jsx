@@ -21,6 +21,7 @@ import Step6 from './pages/livret1/Step6'
 import Step7 from './pages/livret1/Step7'
 import Step8 from './pages/livret1/Step8'
 import Step9 from './pages/livret1/Step9'
+import Livrets from './pages/livrets'
 
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
         <Route path='/livret1/step7' element={<Step7/>}/>
         <Route path='/livret1/step8' element={<Step8/>}/>
         <Route path='/livret1/step9' element={<Step9/>}/>
+        <Route path='/livrets' element={<Livrets/>}/>
         <Route path='/joblist' element={<JobsList/>}/>
         <Route path='/job-detail/:id' element={<Jobdetail/>}/>
         <Route path='/resume' element={<LandingPage/>}/>

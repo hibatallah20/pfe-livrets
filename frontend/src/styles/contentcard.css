@@ -93,7 +93,7 @@
 /* Bouton recherche */
 .custom-button {
   color: white;
-  background-color: #2563eb; /* blue-600 */
+  background-color: #22a874; /* blue-600 */
   border-radius: 9999px;
   padding: 0.5rem 2.5rem;
   font-size: 0.875rem; /* text-sm */
@@ -103,7 +103,7 @@
 }
 
 .custom-button:hover {
-  background-color: #1d4ed8; /* blue-700 */
+  background-color: #22a874; /* blue-700 */
 }
 
 /* Popular searches */
@@ -118,7 +118,7 @@
 
 .popular-search-item {
   background-color: rgba(29, 79, 216, 0.15); /* #1d4fd826 */
-  color: #1d4ed8;
+  color: #429f7b;
   padding: 0.25rem 0.5rem;
   border-radius: 9999px;
   font-size: 0.875rem;

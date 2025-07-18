@@ -78,14 +78,14 @@ export const ResetPassword = () => {
 
     {!isEmailSent && 
     <form onSubmit={onSubmitEmail} className="forms-container">
-      <h1 className="titles">Reset Password</h1>
-    <p className="subtitles">Enter your registered email address.</p>
+      <h1 className="titles">Réinitialiser le mot de passe</h1>
+    <p className="subtitles">Entrez votre adresse e-mail enregistrée.</p>
     <div className="input-container">
       <img src={assets.mail_icon} alt="" />
       <input type="email" placeholder='Email id' 
       value={email} onChange={e => setEmail(e.target.value)} required/>
     </div>
-    <button className="submit-btn">Submit</button>
+    <button className="submit-btn">Soumettre</button>
 
 
     </form>
@@ -95,8 +95,8 @@ export const ResetPassword = () => {
     {/* otp input form */}
     {!isOtpSubmited && isEmailSent &&
     <form  onSubmit={onSubmitOTP} className="formees-container">
-    <h1 className="titlees">Reset Password OTP</h1>
-    <p className="subtitlees">Enter the 6-digit code sent to your email id.</p>
+    <h1 className="titlees">Réinitialiser le mot de passe - OTP</h1>
+    <p className="subtitlees">Entrez le code à 6 chiffres envoyé à votre adresse e-mail.</p>
     <div className="otps-container" onPaste={handlePaste}>
       {Array(6).fill(0).map((_, index) => (
         <input
@@ -112,21 +112,21 @@ export const ResetPassword = () => {
       />
       ))}
     </div>
-    <button className="verifys-btn">Submit</button>
+    <button className="verifys-btn">Soumettre</button>
     </form>
     }
 
     {/* enter new password */}
     {isOtpSubmited && isEmailSent && 
     <form onSubmit={onSubmitNewPassword} className="f-container">
-      <h1 className="big-text">New Password</h1>
-    <p className="small-text">Enter the new password below.</p>
+      <h1 className="big-text">Nouveau mot de passe</h1>
+    <p className="small-text">Entrez le nouveau mot de passe ci-dessous.</p>
     <div className="i-container">
       <img src={assets.lock_icon} alt="" />
       <input type="password" placeholder='Password' 
       value={newPassword} onChange={e => setNewPassword(e.target.value)} required/>
     </div>
-    <button className="submites-btn">Submit</button>
+    <button className="submites-btn">Soumettre</button>
     </form>
     }
         

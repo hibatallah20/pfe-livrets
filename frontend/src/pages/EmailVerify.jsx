@@ -66,8 +66,8 @@ useEffect(() => {
     <div className="auth">
     <img src={assets.logo} alt="Logo" className="auth-logo" />
     <form onSubmit={onSubmitHandler} className="form-container">
-    <h1 className="title">Email Verify OTP</h1>
-    <p className="subtitle">Enter the 6-digit code sent to your email id.</p>
+    <h1 className="title">Vérification de l’e-mail par code OTP</h1>
+    <p className="subtitle">Entrez le code à 6 chiffres envoyé à votre adresse e-mail.</p>
     <div className="otp-container" onPaste={handlePaste}>
       {Array(6).fill(0).map((_, index) => (
         <input
@@ -83,7 +83,7 @@ useEffect(() => {
       />
       ))}
     </div>
-    <button className="verify-btn">Verify email</button>
+    <button className="verify-btn">Vérifier l’adresse e-mail</button>
 
 
 

@@ -16,7 +16,7 @@ const SideLeftRightButtons = ({ prevPage = null, nextPage = null, sidebarOpen = 
                        
                         onClick={() => navigate(nextPage)}
                         className="right-button"
-                          style={{ backgroundColor: 'rgba(217, 70, 239, 0.65)' }}
+                          style={{ backgroundColor: 'rgba(42, 121, 150, 0.65)' }}
                     >
                         <ChevronRightIcon className="buttons-icon" />
                     </IconButton>
@@ -28,7 +28,7 @@ const SideLeftRightButtons = ({ prevPage = null, nextPage = null, sidebarOpen = 
                     <IconButton
                         onClick={() => navigate(prevPage)}
                         className="left-button"
-                          style={{ backgroundColor: 'rgba(217, 70, 239, 0.65)' }}
+                          style={{ backgroundColor: 'rgba(42, 121, 150, 0.65)' }}
                     >
                         <ChevronLeftIcon className="buttons-icon" />
                     </IconButton>

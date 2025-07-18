@@ -718,7 +718,7 @@ const EditResume = () => {
                       : <Save size={16} />}
                       {isLoading ? "Enregistrement en cours..." : "Enregistrer & quitter"}
                     </button>
-                    <button className="buttonNex" onClick={validateAndNext} disabled={isLoading}>
+                    <button className="buttonNext" onClick={validateAndNext} disabled={isLoading}>
                       {currentPage === "additionalInfo" && <Download size={16} />}
                       {currentPage === "additionalInfo" ? "Preview & Download" : "Next"}
                       {currentPage === "additionalInfo" && <ArrowLeft size={16} className="rotate-180" />}
@@ -750,7 +750,7 @@ const EditResume = () => {
         </div>
         {/* modal data here */}
         <Modal isOpen={openThemeSelector} onClose={() => setOpenThemeSelector(false)}
-          title="Change Title">
+          title="Changer le titre">
             <div className="modalContent">
               <ThemeSelector selectedTheme={resumeData?.template.theme}
               setSelectedTheme={updateTheme} onClose={() => setOpenThemeSelector(false) }

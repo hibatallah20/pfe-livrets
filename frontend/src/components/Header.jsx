@@ -3,6 +3,7 @@ import { assets } from '../assets/assets';
 import '../styles/header.css'; 
 import { useNavigate } from 'react-router-dom'
 import { AppContent } from '../context/AppContext';
+import OIP from '../assets/OIP.webp'
 
 
 const Header = () => {
@@ -24,7 +25,7 @@ const Header = () => {
             Commencer
           </button>
           </div>
-        <img src={assets.header_img} alt="Header" className="header-img" />
+        <img src={OIP} alt="Header" className="header-img" />
         </>
       ) : (
         <div className="accueil">
@@ -93,7 +94,7 @@ const Header = () => {
                             </p>
                         </div>
                         <div className="module-footer">
-                            <button className="module-link purple-link" onClick={() => navigate('/livrets')}> Explorer les ressources → </button>
+                            <button className="module-link purple-link" onClick={() => navigate("/livrets")} > Explorer les ressources → </button>
                         </div>
                     </div>
                 </div>

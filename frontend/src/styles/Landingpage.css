@@ -37,7 +37,7 @@
 .logoIcon {
   width: 2.5rem;   /* w-10 = 2.5rem */
   height: 2.5rem;
-  background-image: linear-gradient(to bottom right, #7c3aed, #d946ef);
+  background-image: linear-gradient(to bottom right, #4738e6, #176026);
   border-radius: 1rem; /* rounded-2xl */
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@
 .logoText {
   font-size: 1.25rem; /* text-xl */
   font-weight: 900;
-  background-image: linear-gradient(to right, #7c3aed, #d946ef);
+  background-image: linear-gradient(to bottom right, #4738e6, #176026);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -95,7 +95,7 @@
   padding-right: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.75rem;
-  background-image: linear-gradient(to right, #7c3aed, #d946ef);
+  background-image: linear-gradient(to bottom right, #4738e6, #176026);
   color: white;
   font-weight: 700;
   border-radius: 1rem;
@@ -115,7 +115,7 @@
 .desktopAuthButtonOverlay {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(to right, #d946ef, #7c3aed);
+  background-image: linear-gradient(to bottom right, #4738e6, #176026);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -130,7 +130,7 @@
   padding-right: 1.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  background-image: linear-gradient(to right, #7c3aed, #d946ef);
+  background-image: linear-gradient(to bottom right, #4738e6, #176026);
   color: white;
   font-weight: 700;
   border-radius: 1rem;
@@ -297,7 +297,7 @@
 
 .headingGradient {
   display: block;
-  background-image: linear-gradient(to right, #7c3aed, #d946ef, #f97316);
+  background-image: linear-gradient(to bottom right, #4738e6, #288d3d, #1c7656 );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -337,7 +337,7 @@
 .primaryButton {
   position: relative;
   padding: 1rem 2.5rem;
-  background: linear-gradient(to right, #7c3aed, #d946ef);
+  background: linear-gradient(to bottom right, #4738e6, #288d3d, #1c7656 );
   color: white;
   font-weight: 700;
   border-radius: 1rem;
@@ -356,7 +356,7 @@
 .primaryButtonOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, #d946ef, #f97316);
+  background: linear-gradient(to bottom right, #4738e6, #288d3d, #1c7656 );
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -415,14 +415,14 @@
 }
 
 .heroIllustrationContainer img {
-  width: 30rem; /* toujours petit */
+  width: 30rem; 
   height: auto;
 }
 
 .heroIllustrationBg {
   position: absolute;
   inset: -1rem;
-  background-image: linear-gradient(to right, rgba(167, 139, 250, 0.3), rgba(219, 39, 119, 0.3));
+  background-image: linear-gradient(to right, rgba(51, 172, 87, 0.3), rgba(21, 122, 135, 0.3));
   border-radius: 2rem;
   filter: blur(8px);
 }
@@ -535,7 +535,7 @@
 }
 
 .featuresTitleGradient {
-  background-image: linear-gradient(to right, #7c3aed, #d946ef);
+  background-image: linear-gradient(to right, rgba(39, 132, 67, 0.3), rgba(219, 39, 119, 0.3));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -611,7 +611,7 @@
 .featureIconContainer {
   width: 4rem;
   height: 4rem;
-  background-image: linear-gradient(to bottom right, #7c3aed, #6b21a8);
+  background-image: linear-gradient(to right, rgba(39, 132, 67, 0.3), rgba(219, 39, 119, 0.3));
   border-radius: 1rem;
   display: flex;
   align-items: center;

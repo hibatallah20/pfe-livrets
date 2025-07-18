@@ -147,7 +147,7 @@
 /* ProfileInfoForm */
 .profileContainer {
   padding: 2rem;
-  background: linear-gradient(to bottom right, #ffffff, #fff1f2);
+  background: white;
 }
 .profileHeading {
   font-size: 1.5rem;
@@ -158,11 +158,11 @@
 .profileTextarea {
   width: 100%;
   padding: 1rem;
-  background: white;
+  /* background: white; */
   border: 1px solid #fecaca;
   border-radius: 0.75rem;
   outline: none;
-  resize: none;
+  resize: none; 
   transition: all 0.2s ease;
 }
 .profileTextarea:focus {

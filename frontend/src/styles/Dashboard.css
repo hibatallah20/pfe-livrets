@@ -48,7 +48,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem 3rem;
-  background: linear-gradient(to right, #7c3aed, #d946ef);
+  background: linear-gradient(to right, #34578a, #34935f);
   color: white;
   font-weight: 700;
   border: none; /* retire les bordures par défaut */
@@ -168,7 +168,7 @@
   width: 4rem;
   height: 4rem;
   border-radius: 9999px;
-  background: linear-gradient(to right, #7c3aed, #d946ef);
+  background: linear-gradient(to right, #34578a, #34935f);
   display: flex;
   align-items: center;
   justify-content: center;

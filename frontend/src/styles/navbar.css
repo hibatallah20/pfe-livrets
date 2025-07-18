@@ -3,18 +3,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 6rem; /* équivalent p-4 sm:p-6 sm:px-24 */
+  padding: 1rem 6rem;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(75, 150, 177); /* souvent utile en navbar fixe */
+  background-color: rgb(69, 116, 123); 
   box-sizing: border-box;
   z-index: 100;
 }
 
 .navbar-logo {
-  width: 7rem; /* w-28 = 7rem (28 * 0.25rem) */
+  width: 7rem; 
 }
 
 @media (min-width: 640px) {
