@@ -8,40 +8,31 @@ import '../../styles/livret1.step2.css';
 
 const data = [
   {
-    number: "01",
-    title: "Objectif de l’étape",
-    text: "Aider le chercheur d’emploi à identifier ses compétences et aptitudes et à les relier aux emplois disponibles"
+
+    title: "Réseau personnel, familial et social",
+    text: " Les personnes de ce type de réseau peuvent te donner des conseils professionnels, te recommander pour des postes ou te connecter à des opportunités d’emploi.",
   },
   {
-    number: "02",
-    title: "Identification des compétences clés",
-    text: "• Compétences techniques (comme l’utilisation de logiciels, les langues étrangères, les spécialisations)\n• Compétences comportementales (travail en équipe, leadership, communication)\n• Compétences transférables d’un emploi à un autre"
+
+    title: "Réseaux professionnels",
+    text: "• Contacte-les de manière professionnelle et demande leurs conseils ou opportunités dans leurs entreprises\n• Connecte-toi sur LinkedIn avec des responsables d’entreprises et demande-leur des informations sur les offres d’emploi\n• Crée un profil professionnel, connecte-toi avec des personnes de ton domaine et interagis avec leur contenu\n• Ils t’aident à atteindre des entreprises et des personnes éloignées géographiquement ou que tu ne connais pas personnellement\n• Lors d’un salon de l’emploi, tu peux parler directement à un responsable recrutement et lui présenter ton CV"
   },
   {
-    number: "03",
-    title: "Utilisation des tests d’orientation professionnelle",
-    text: "• Passer le test RIASEC pour connaître ton type de personnalité professionnelle (Réaliste, Investigateur, Artistique, Social, Entreprenant, Conventionnel)\n• Analyser les résultats du test et les associer aux emplois adaptés"
+
+    title: "Réseaux et événements professionnels",
+    text: " Ils te donnent l’occasion de rencontrer de nouvelles personnes dans ton domaine et d’élargir ton réseau."
   },
-  {
-    number: "04",
-    title: "Création d’un profil de compétences",
-    text: "• Rédiger une liste des compétences clés correspondant aux exigences du marché\n• Identifier les compétences à développer et mettre à jour\n• Élaborer un plan de formation pour améliorer les compétences manquantes"
-  },
-  {
-    number: "05",
-    title: "Analyse des expériences professionnelles passées",
-    text: "• Identifier les rôles et responsabilités antérieurs et leur adéquation avec les nouvelles opportunités d’emploi\n• Tirer parti des expériences de succès passées pour améliorer ta progression vers des emplois futurs"
-  }
+
 ];
 
 
-const Step5 = () => {
+const Pg4 = () => {
     return (
         <>
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">Étape 2 : Analyse des compétences</h1>
+                    <h1 className="step2-title">Le réseau professionnel et personnel</h1>
                 </div>
                 <Grid
                     container
@@ -74,11 +65,13 @@ const Step5 = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <SideLeftRightButtons nextPage="/livret1/step6" />
-                <SideLeftRightButtons prevPage="/livret1/step4" />
+            
+                
+
+                <SideLeftRightButtons prevPage="/livret3/pg3" />
             </div>
         </>
     )
 }
 
-export default Step5;
+export default Pg4;

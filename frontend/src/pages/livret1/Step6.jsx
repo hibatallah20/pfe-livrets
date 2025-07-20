@@ -7,12 +7,33 @@ import '../../styles/livret1.step2.css';
 
 
 const data = [
-    { number: "01", title: "كيفية تهديد مسار مهني واضح", subTitle: "كيفية تهديد", text: "تمكين الباحث عن العمل من وضع رؤية مهنية واضحة ومحددة تتماشى مع طموحاته و إمكانياته" },
-    { number: "02", title: "تحليل الكفاءآت الشخصية", text: "مساعدة الباحث عن عمل في التعرف على مهاراته و كفاءآته و ربطها بالوظائف المتاحة" },
-    { number: "03", title: "طرق البحث الفعالة عن فرص العمل", text: "تزويد الباحث عن العمل بفضل الأدوات والأساليب للوصول إلى فرص العمل المتاحة" },
-    { number: "04", title: "إعداد ملف شخصي قوي", text: "تمكين الباحث عن العمل من إعداد ملف مهني جذاب يزيد من فرصة في التوضيف" },
-    { number: "05", title: "نصائح عملية لتحديد أي عمل يمكنني أن أبحث", text: "نعرض لك أهم القواعد لمساعدتك على تنظيم و تسهيل عملية البحث عن وظيفة" },
+  {
+    number: "01",
+    title: "Objectif de l’étape",
+    text: "Fournir au chercheur d’emploi les meilleurs outils et méthodes pour accéder aux opportunités d’emploi disponibles"
+  },
+  {
+    number: "02",
+    title: "Utilisation des sites web",
+    text: "• Créer un compte professionnel sur les sites d’emploi ANAPEC, Bayt\n• Télécharger et mettre régulièrement à jour le CV\n• Activer les alertes pour recevoir les nouvelles offres d’emploi"
+  },
+  {
+    number: "03",
+    title: "Visiter les entreprises ciblées",
+    text: "• Établir une liste des entreprises appropriées et déposer des candidatures directes\n• Participer aux salons de l’emploi pour rencontrer les responsables RH\n• Rechercher les programmes de formation proposés par les grandes entreprises"
+  },
+  {
+    number: "04",
+    title: "Utiliser les réseaux professionnels",
+    text: "• Rejoindre des groupes professionnels liés au secteur visé\n• Interagir avec les publications relatives aux emplois et participer aux discussions\n• Rechercher les responsables du recrutement et les contacter directement"
+  },
+  {
+    number: "05",
+    title: "Communiquer avec ton réseau personnel",
+    text: "• Demander des recommandations auprès d’amis et de la famille\n• Profiter de tes connaissances personnelles pour obtenir des informations sur les offres d’emploi non publiées\n• Participer à des événements professionnels pour élargir tes opportunités d’emploi"
+  }
 ];
+
 
 const Step6 = () => {
     return (
@@ -20,7 +41,7 @@ const Step6 = () => {
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">توضيح هام للباحثين عن الشغل</h1>
+                    <h1 className="step2-title">Étape 3 : Méthodes efficaces pour rechercher des opportunités d’emploi</h1>
                 </div>
                 <Grid
                     container

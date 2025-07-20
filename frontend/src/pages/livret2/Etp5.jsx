@@ -9,39 +9,41 @@ import '../../styles/livret1.step2.css';
 const data = [
   {
     number: "01",
-    title: "Objectif de l’étape",
-    text: "Aider le chercheur d’emploi à identifier ses compétences et aptitudes et à les relier aux emplois disponibles"
+    title: "Objectif",
+    subTitle: "Découvrir les formations",
+    text: "Tu cherches une opportunité pour développer tes compétences et augmenter tes chances de trouver un emploi ? Participe au programme de formation qualifiante proposé par Advanced Software!",
   },
   {
     number: "02",
-    title: "Identification des compétences clés",
-    text: "• Compétences techniques (comme l’utilisation de logiciels, les langues étrangères, les spécialisations)\n• Compétences comportementales (travail en équipe, leadership, communication)\n• Compétences transférables d’un emploi à un autre"
+    title: "Avantages de la formation",
+    text: "Formation gratuite et certifiée par Advanced Software- Formation dans les domaines techniques, informatiques et linguistiques - Formation dans des centres agréés - Suivi et accompagnement professionnel - Attestation de participation à la fin de la formation -"
   },
   {
     number: "03",
-    title: "Utilisation des tests d’orientation professionnelle",
-    text: "• Passer le test RIASEC pour connaître ton type de personnalité professionnelle (Réaliste, Investigateur, Artistique, Social, Entreprenant, Conventionnel)\n• Analyser les résultats du test et les associer aux emplois adaptés"
+    title: "Choix de la formation",
+    subTitle: "Si tu n’es pas sûr(e) de la formation qui te convient, ton conseiller emploi peut te guider vers un service d’évaluation des compétences qui t’aidera à :",
+    text: "Identifier tes points forts et tes points faibles - Déterminer les compétences acquises et celles à développer - Mieux comprendre tes objectifs professionnels et personnels - https://urls.fr/umQDf4"
   },
   {
     number: "04",
-    title: "Création d’un profil de compétences",
-    text: "• Rédiger une liste des compétences clés correspondant aux exigences du marché\n• Identifier les compétences à développer et mettre à jour\n• Élaborer un plan de formation pour améliorer les compétences manquantes"
+    title: "Inscription à la formation",
+    subTitle: "Pour t’inscrire au programme de formation qualifiante :",
+    text: "Visite le lien : https://advanced-software.ma/inscription Choisis l’organisme concerné et remplis le formulaire d’inscription"
   },
   {
     number: "05",
-    title: "Analyse des expériences professionnelles passées",
-    text: "• Identifier les rôles et responsabilités antérieurs et leur adéquation avec les nouvelles opportunités d’emploi\n• Tirer parti des expériences de succès passées pour améliorer ta progression vers des emplois futurs"
-  }
+    text: "Formations dans plusieurs domaines - Éducation et pédagogie - Conseil à distance - Tourisme et hôtellerie - Technologie numérique"
+  },
 ];
 
 
-const Step5 = () => {
+const Etp5 = () => {
     return (
         <>
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">Étape 2 : Analyse des compétences</h1>
+                    <h1 className="step2-title">Formation qualifiante</h1>
                 </div>
                 <Grid
                     container
@@ -74,11 +76,13 @@ const Step5 = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <SideLeftRightButtons nextPage="/livret1/step6" />
-                <SideLeftRightButtons prevPage="/livret1/step4" />
+            
+                
+                <SideLeftRightButtons nextPage="/livret2/etp6" />
+                <SideLeftRightButtons prevPage="/livret2/etp4" />
             </div>
         </>
     )
 }
 
-export default Step5;
+export default Etp5;

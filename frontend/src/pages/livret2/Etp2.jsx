@@ -8,40 +8,31 @@ import '../../styles/livret1.step2.css';
 
 const data = [
   {
-    number: "01",
-    title: "Objectif de l’étape",
-    text: "Aider le chercheur d’emploi à identifier ses compétences et aptitudes et à les relier aux emplois disponibles"
+    title: "Clé pour acquérir les compétences demandées sur le marché du travail",
+   
   },
   {
-    number: "02",
-    title: "Identification des compétences clés",
-    text: "• Compétences techniques (comme l’utilisation de logiciels, les langues étrangères, les spécialisations)\n• Compétences comportementales (travail en équipe, leadership, communication)\n• Compétences transférables d’un emploi à un autre"
+    title: "Augmentation des opportunités d’emploi",
   },
   {
-    number: "03",
-    title: "Utilisation des tests d’orientation professionnelle",
-    text: "• Passer le test RIASEC pour connaître ton type de personnalité professionnelle (Réaliste, Investigateur, Artistique, Social, Entreprenant, Conventionnel)\n• Analyser les résultats du test et les associer aux emplois adaptés"
+    title: "Suivi des évolutions",
   },
   {
-    number: "04",
-    title: "Création d’un profil de compétences",
-    text: "• Rédiger une liste des compétences clés correspondant aux exigences du marché\n• Identifier les compétences à développer et mettre à jour\n• Élaborer un plan de formation pour améliorer les compétences manquantes"
+    title: "Renforcement de la confiance en soi",
   },
   {
-    number: "05",
-    title: "Analyse des expériences professionnelles passées",
-    text: "• Identifier les rôles et responsabilités antérieurs et leur adéquation avec les nouvelles opportunités d’emploi\n• Tirer parti des expériences de succès passées pour améliorer ta progression vers des emplois futurs"
-  }
+    title: "Ouverture de nouvelles perspectives",
+  },
 ];
 
 
-const Step5 = () => {
+const Step2 = () => {
     return (
         <>
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">Étape 2 : Analyse des compétences</h1>
+                    <h1 className="step2-title">Importance de la formation</h1>
                 </div>
                 <Grid
                     container
@@ -74,11 +65,15 @@ const Step5 = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <SideLeftRightButtons nextPage="/livret1/step6" />
-                <SideLeftRightButtons prevPage="/livret1/step4" />
+                <div className="step2-header">
+                    <h2 className="step2-title2">La formation est indispensable pour développer tes compétences et suivre les exigences du marché du travail. Plus tu développes tes compétences, plus tu augmentes tes chances d’obtenir un bon emploi, de renforcer ta confiance en toi, <br />d’affronter les défis et de réaliser tes ambitions.</h2>
+                </div>
+                
+                <SideLeftRightButtons nextPage="/livret2/etp3" />
+                <SideLeftRightButtons prevPage="/livret2/step1" />
             </div>
         </>
     )
 }
 
-export default Step5;
+export default Step2;

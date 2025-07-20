@@ -9,39 +9,40 @@ import '../../styles/livret1.step2.css';
 const data = [
   {
     number: "01",
-    title: "Objectif de l’étape",
-    text: "Aider le chercheur d’emploi à identifier ses compétences et aptitudes et à les relier aux emplois disponibles"
+    title: "Objectif de l'étape",
+    text: "Tu cherches une opportunité de formation à distance pour développer tes compétences et augmenter tes chances professionnelles ? La formation à distance est une occasion d’acquérir de nouvelles compétences recherchées sur le marché du travail !",
   },
   {
     number: "02",
-    title: "Identification des compétences clés",
-    text: "• Compétences techniques (comme l’utilisation de logiciels, les langues étrangères, les spécialisations)\n• Compétences comportementales (travail en équipe, leadership, communication)\n• Compétences transférables d’un emploi à un autre"
+    title: "Avantages de la formation",
+    text: "Un moyen efficace d’apprendre sans avoir besoin de te déplacer - Formations gratuites (techniques, informatiques, linguistiques...) - Programmes nationaux et internationaux avec des connaissances constamment mises à jour - Flexibilité dans l’apprentissage"
   },
   {
     number: "03",
-    title: "Utilisation des tests d’orientation professionnelle",
-    text: "• Passer le test RIASEC pour connaître ton type de personnalité professionnelle (Réaliste, Investigateur, Artistique, Social, Entreprenant, Conventionnel)\n• Analyser les résultats du test et les associer aux emplois adaptés"
+    title: "Académie numérique",
+    text: "Alphabétisation numérique : - Outils numériques de base - Sécurité sur Internet - Création d’un site web - E-commerce - Principales tendances technologiques - Métiers du numérique - Fondamentaux de la programmation numérique - Télétravail"
   },
   {
     number: "04",
-    title: "Création d’un profil de compétences",
-    text: "• Rédiger une liste des compétences clés correspondant aux exigences du marché\n• Identifier les compétences à développer et mettre à jour\n• Élaborer un plan de formation pour améliorer les compétences manquantes"
+    title: "Plateforme Coursera",
+    text: "Résolution de problèmes et prise de décisions efficaces - Introduction à l’analyse de données avec IBM - Introduction au développement de l’interface utilisateur - Programmation en Python"
   },
   {
     number: "05",
-    title: "Analyse des expériences professionnelles passées",
-    text: "• Identifier les rôles et responsabilités antérieurs et leur adéquation avec les nouvelles opportunités d’emploi\n• Tirer parti des expériences de succès passées pour améliorer ta progression vers des emplois futurs"
-  }
+    title: "Inscription",
+    text: "https://advanced-software.ma/ceps/inscription_coursera - https://academiaragmya.gov.ma/sign-up/"
+  },
 ];
 
 
-const Step5 = () => {
+
+const Etp7 = () => {
     return (
         <>
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">Étape 2 : Analyse des compétences</h1>
+                    <h1 className="step2-title">Formations à distance</h1>
                 </div>
                 <Grid
                     container
@@ -74,11 +75,13 @@ const Step5 = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <SideLeftRightButtons nextPage="/livret1/step6" />
-                <SideLeftRightButtons prevPage="/livret1/step4" />
+            
+                
+
+                <SideLeftRightButtons prevPage="/livret2/etp6" />
             </div>
         </>
     )
 }
 
-export default Step5;
+export default Etp7;

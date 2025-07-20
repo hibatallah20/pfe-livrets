@@ -24,7 +24,7 @@ export const LivretCover = ({ header, title, subTitle, text, content }) => {
 
                 <div className="cardmiu-cover-card">
                     <CardMUI
-                        maxWidth={600}
+                        maxWidth={300}
                         title={text}
                         text={content}
                     />

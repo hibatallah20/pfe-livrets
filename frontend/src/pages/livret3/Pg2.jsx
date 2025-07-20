@@ -8,40 +8,24 @@ import '../../styles/livret1.step2.css';
 
 const data = [
   {
-    number: "01",
-    title: "Objectif de l’étape",
-    text: "Aider le chercheur d’emploi à identifier ses compétences et aptitudes et à les relier aux emplois disponibles"
+    title:"Le marché du travail ouvert",
+    text: "Le marché caché fait référence aux opportunités d'emploi qui ne sont pas annoncées publiquement par les canaux traditionnels comme les sites web ou les journaux. Ces postes sont pourvus par le biais de **réseaux de relations personnelles, recommandations, réseaux professionnels, candidatures directes ou recrutements internes** au sein des entreprises.",
+   
   },
   {
-    number: "02",
-    title: "Identification des compétences clés",
-    text: "• Compétences techniques (comme l’utilisation de logiciels, les langues étrangères, les spécialisations)\n• Compétences comportementales (travail en équipe, leadership, communication)\n• Compétences transférables d’un emploi à un autre"
+    title:"Le marché ouvert de l’emploi regroupe toutes les opportunités professionnelles annoncées publiquement et accessibles à tous, que ce soit en ligne (sites d’emploi, LinkedIn, annonces d’entreprises), dans les journaux, ou via les agences de placement. Tout le monde peut consulter et postuler à ce type d’offres.",
+    text: "le marché du travail caché",
   },
-  {
-    number: "03",
-    title: "Utilisation des tests d’orientation professionnelle",
-    text: "• Passer le test RIASEC pour connaître ton type de personnalité professionnelle (Réaliste, Investigateur, Artistique, Social, Entreprenant, Conventionnel)\n• Analyser les résultats du test et les associer aux emplois adaptés"
-  },
-  {
-    number: "04",
-    title: "Création d’un profil de compétences",
-    text: "• Rédiger une liste des compétences clés correspondant aux exigences du marché\n• Identifier les compétences à développer et mettre à jour\n• Élaborer un plan de formation pour améliorer les compétences manquantes"
-  },
-  {
-    number: "05",
-    title: "Analyse des expériences professionnelles passées",
-    text: "• Identifier les rôles et responsabilités antérieurs et leur adéquation avec les nouvelles opportunités d’emploi\n• Tirer parti des expériences de succès passées pour améliorer ta progression vers des emplois futurs"
-  }
 ];
 
 
-const Step5 = () => {
+const Pg2 = () => {
     return (
         <>
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">Étape 2 : Analyse des compétences</h1>
+                    <h1 className="step2-title">Le marché du travail ouvert et le marché du travail caché</h1>
                 </div>
                 <Grid
                     container
@@ -74,11 +58,15 @@ const Step5 = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <SideLeftRightButtons nextPage="/livret1/step6" />
-                <SideLeftRightButtons prevPage="/livret1/step4" />
+                <div className="step2-header">
+                    <h2 className="step2-title2">La formation est indispensable pour développer tes compétences et suivre les exigences du marché du travail. Plus tu développes tes compétences, plus tu augmentes tes chances d’obtenir un bon emploi, de renforcer ta confiance en toi, <br />d’affronter les défis et de réaliser tes ambitions.</h2>
+                </div>
+                
+                <SideLeftRightButtons nextPage="/livret3/pg3" />
+                <SideLeftRightButtons prevPage="/livret3/pg1" />
             </div>
         </>
     )
 }
 
-export default Step5;
+export default Pg2;

@@ -9,6 +9,18 @@
   
  
 }
+.header-container {
+  display: flex;
+   align-items: center;        /* centre verticalement */
+  justify-content: center;
+  text-align: left;
+  gap: 0.5rem;          
+  padding: 4rem 2rem 2rem;
+  min-height: 60vh;
+  margin-top: 190px;
+  
+ 
+}
 
 .header-img {
 position: absolute;

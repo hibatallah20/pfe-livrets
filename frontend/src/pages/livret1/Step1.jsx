@@ -7,9 +7,9 @@ import SideLeftRightButtons from '../../components/RightLeft.jsx'
 
 const data = {
     header: 'Livrets de recherche emploi',
-    title: 'Atelier : Construis et élargis ton réseau et tes relations',
+    title: 'Atelier : Déterminer quel type d`emploi je peux rechercher',
     subTitle: 'Ateliers de recherche emploi',
-    text: '? Tu veux savoir quel travail te correspond',
+    text: 'Tu veux savoir quel travail te correspond ?',
     content: `Tu cherches un emploi et tu ne sais pas par où commencer ? ✖ Participe à
               nos ateliers de formation qui vont t’apprendre comment exploiter
               le marché caché, construire ton réseau professionnel, et trouver des opportunités

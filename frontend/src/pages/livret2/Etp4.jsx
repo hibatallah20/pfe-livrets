@@ -8,40 +8,35 @@ import '../../styles/livret1.step2.css';
 
 const data = [
   {
-    number: "01",
-    title: "Objectif de l’étape",
-    text: "Aider le chercheur d’emploi à identifier ses compétences et aptitudes et à les relier aux emplois disponibles"
+    title: "Formation qualifiante",
+   
   },
   {
-    number: "02",
-    title: "Identification des compétences clés",
-    text: "• Compétences techniques (comme l’utilisation de logiciels, les langues étrangères, les spécialisations)\n• Compétences comportementales (travail en équipe, leadership, communication)\n• Compétences transférables d’un emploi à un autre"
+    title: "Formations organisées par les partenaires",
   },
   {
-    number: "03",
-    title: "Utilisation des tests d’orientation professionnelle",
-    text: "• Passer le test RIASEC pour connaître ton type de personnalité professionnelle (Réaliste, Investigateur, Artistique, Social, Entreprenant, Conventionnel)\n• Analyser les résultats du test et les associer aux emplois adaptés"
+    title: "Formations à distance",
   },
   {
-    number: "04",
-    title: "Création d’un profil de compétences",
-    text: "• Rédiger une liste des compétences clés correspondant aux exigences du marché\n• Identifier les compétences à développer et mettre à jour\n• Élaborer un plan de formation pour améliorer les compétences manquantes"
+    title: "Formations en compétences douces",
   },
   {
-    number: "05",
-    title: "Analyse des expériences professionnelles passées",
-    text: "• Identifier les rôles et responsabilités antérieurs et leur adéquation avec les nouvelles opportunités d’emploi\n• Tirer parti des expériences de succès passées pour améliorer ta progression vers des emplois futurs"
-  }
+    title: "Ouverture de nouvelles perspectives",
+  },
 ];
 
 
-const Step5 = () => {
+const Etp4 = () => {
     return (
         <>
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">Étape 2 : Analyse des compétences</h1>
+                    <h1 className="step2-title">Les formations disponibles</h1>
+                </div>
+                <div className="step2-header">
+                    <h2 className="step2-title2">Valorise tes compétences et ouvre de nouvelles perspectives pour ton avenir professionnel ! Advanced Software t’offre des opportunités de formation de qualité dans divers domaines. Saisis ta chance, développe tes capacités et augmente tes chances d’intégration sur le marché du travail.</h2>
+                    <h2 className="step2-title2">Formations disponibles</h2>
                 </div>
                 <Grid
                     container
@@ -74,11 +69,12 @@ const Step5 = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <SideLeftRightButtons nextPage="/livret1/step6" />
-                <SideLeftRightButtons prevPage="/livret1/step4" />
+              
+                <SideLeftRightButtons nextPage="/livret2/etp5" />
+                <SideLeftRightButtons prevPage="/livret2/etp3" />
             </div>
         </>
     )
 }
 
-export default Step5;
+export default Etp4;

@@ -13,10 +13,10 @@ const Header = () => {
 
 
   return (
-      <div className="headers-container">
+    <>
       {!userData ? (
         <>
-      
+        <div className="headers-container">
           <div className="header-text">
           <h1>Boostez votre avenir</h1>
           <p className="firstsubtitle">Trouvez des offres d'emploi et créez votre CV facilement.<br />
@@ -26,8 +26,10 @@ const Header = () => {
           </button>
           </div>
         <img src={OIP} alt="Header" className="header-img" />
+        </div>
         </>
       ) : (
+        <div className="header-container">
         <div className="accueil">
             <div className="content-wrapper">
                 <div className="header-section">
@@ -100,8 +102,9 @@ const Header = () => {
                 </div>
             </div>
         </div>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 

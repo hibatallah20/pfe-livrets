@@ -8,34 +8,35 @@ import { Grid } from '@mui/material'
 
 
 const data = [
-    {
-        number: "01",
-        title: "هدف الخطوة",
-        text: "تمكين الباحث عن العمل من وضع رؤية مهنية واضحة ومحددة تتماشى مع طموحاته وإمكانياته",
-        image: image4
-    },
-    {
-        number: "02",
-        title: "تحليل الرغبات المهنية",
-        subTitle: "أسأل نفسك",
-        text: "- ما الوظائف التي أشعر بالشغف تجاهها؟\n- ما القطاعات التي تثير اهتمامي؟\n- كيف أرى نفسي بعد 5 سنوات؟"
-    },
-    {
-        number: "03",
-        title: "تحليل نقاط القوة والضعف",
-        text: "- تدوين قائمة بالمؤهلات التي تمتلكها ومقارنتها مع متطلبات السوق\n- تحليل التجارب السابقة لتحديد النجاحات والتحديات\n- طلب آراء الأصدقاء أو المرشدين المهنيين لمعرفة مجالات التحسين"
-    },
-    {
-        number: "04",
-        title: "تحديد الأهداف المهنية",
-        text: "- وضع أهداف قصيرة ومتوسطة وطويلة المدى\n- استخدام مبدأ SMART (محدد، قابل للقياس، قابل للتحقيق، ذو صلة، زمني)\n- تقسيم الأهداف إلى مهام صغيرة قابلة للتنفيذ"
-    },
-    {
-        number: "05",
-        title: "تحديد الوظائف المناسبة",
-        text: "- البحث عن الوظائف التي تتماشى مع مهاراتك وشهاداتك\n- تحديد المجالات التي توفر فرصاً أكبر للنمو والتطور\n- إجراء مقابلات استكشافية مع المهنيين العاملين في المجال المستهدف"
-    }
+  {
+    number: "01",
+    title: "Objectif de l’étape",
+    text: "Permettre au chercheur d'emploi de définir une vision professionnelle claire et précise en accord avec ses ambitions et ses capacités",
+    image: image4
+  },
+  {
+    number: "02",
+    title: "Analyse des aspirations professionnelles",
+    subTitle: "Pose-toi les questions suivantes",
+    text: "- Quels sont les métiers qui me passionnent ?\n- Quels secteurs m'intéressent ?\n- Comment je me vois dans 5 ans ?"
+  },
+  {
+    number: "03",
+    title: "Analyse des forces et faiblesses",
+    text: "- Faire la liste de ses qualifications et les comparer aux exigences du marché\n- Analyser les expériences passées pour identifier réussites et défis\n- Demander l’avis d’amis ou de conseillers professionnels pour cibler les axes d’amélioration"
+  },
+  {
+    number: "04",
+    title: "Définition des objectifs professionnels",
+    text: "- Fixer des objectifs à court, moyen et long terme\n- Utiliser la méthode SMART (Spécifique, Mesurable, Atteignable, Réaliste, Temporel)\n- Diviser les objectifs en tâches petites et réalisables"
+  },
+  {
+    number: "05",
+    title: "Identification des emplois adaptés",
+    text: "- Rechercher les emplois correspondant à tes compétences et diplômes\n- Identifier les secteurs offrant les meilleures opportunités de croissance\n- Mener des entretiens exploratoires avec des professionnels du secteur ciblé"
+  }
 ];
+
 
 const Step4 = () => {
     return (
@@ -43,7 +44,7 @@ const Step4 = () => {
         <Navbar/>
             <div className="step4-container">
                 <div className="step4-header">
-                    <h1 className="step4-title">الخطوة 1: كيفية تحديد مسار مهني واضح</h1>
+                   <h1 className="step4-title">Étape 1 : Comment définir une trajectoire professionnelle claire</h1>
                 </div>
 
                 <Grid

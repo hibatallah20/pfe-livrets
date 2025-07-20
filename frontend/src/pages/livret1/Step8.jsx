@@ -7,12 +7,38 @@ import '../../styles/livret1.step2.css';
 
 
 const data = [
-    { number: "01", title: "كيفية تهديد مسار مهني واضح", subTitle: "كيفية تهديد", text: "تمكين الباحث عن العمل من وضع رؤية مهنية واضحة ومحددة تتماشى مع طموحاته و إمكانياته" },
-    { number: "02", title: "تحليل الكفاءآت الشخصية", text: "مساعدة الباحث عن عمل في التعرف على مهاراته و كفاءآته و ربطها بالوظائف المتاحة" },
-    { number: "03", title: "طرق البحث الفعالة عن فرص العمل", text: "تزويد الباحث عن العمل بفضل الأدوات والأساليب للوصول إلى فرص العمل المتاحة" },
-    { number: "04", title: "إعداد ملف شخصي قوي", text: "تمكين الباحث عن العمل من إعداد ملف مهني جذاب يزيد من فرصة في التوضيف" },
-    { number: "05", title: "نصائح عملية لتحديد أي عمل يمكنني أن أبحث", text: "نعرض لك أهم القواعد لمساعدتك على تنظيم و تسهيل عملية البحث عن وظيفة" },
+  {
+    number: "01",
+    title: "Bien te connaître",
+    text: "Identifie tes compétences, centres d’intérêt et points forts\n• Fais une auto-évaluation complète\n• Utilise des outils d’évaluation professionnelle"
+  },
+  {
+    number: "02",
+    title: "Choisir les domaines qui te conviennent",
+    text: "Sélectionne les secteurs adaptés à ta personnalité\n• Établis une liste des emplois correspondant à tes compétences\n• Consulte des experts dans les domaines qui t’intéressent"
+  },
+  {
+    number: "03",
+    title: "Découvrir le marché du travail",
+    text: "Recherche les dernières tendances du marché de l’emploi\n• Informe-toi sur les métiers recherchés\n• Identifie les compétences les plus demandées"
+  },
+  {
+    number: "04",
+    title: "Tester avant de choisir",
+    text: "Fais des expériences professionnelles courtes\n• Fais du bénévolat dans des domaines qui t’intéressent\n• Obtiens une formation pratique avant de t’engager dans un emploi"
+  },
+  {
+    number: "05",
+    title: "Développer tes compétences",
+    text: "Obtiens des certifications reconnues\n• Améliore tes langues étrangères\n• Suis les dernières évolutions techniques dans ton secteur"
+  },
+  {
+    number: "06",
+    title: "Fixer ton objectif et cibler ta recherche",
+    text: "Définis des objectifs clairs et mesurables\n• Concentre-toi sur les domaines correspondant à tes compétences\n• Évite de disperser tes recherches sur des emplois inadaptés"
+  },
 ];
+
 
 const Step8 = () => {
     return (
@@ -20,7 +46,7 @@ const Step8 = () => {
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">توضيح هام للباحثين عن الشغل</h1>
+                    <h1 className="step2-title">Conseils pratiques pour choisir les emplois à rechercher</h1>
                 </div>
                 <Grid
                     container

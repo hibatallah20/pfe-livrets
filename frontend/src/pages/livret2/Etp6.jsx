@@ -9,39 +9,36 @@ import '../../styles/livret1.step2.css';
 const data = [
   {
     number: "01",
-    title: "Objectif de l’étape",
-    text: "Aider le chercheur d’emploi à identifier ses compétences et aptitudes et à les relier aux emplois disponibles"
+    title: "Tu cherches une opportunité pour développer tes compétences et doubler tes chances d’emploi ?",
+    text: "Les formations organisées par les partenaires sont une occasion de développer tes compétences et de t’intégrer sur le marché du travail !",
+
   },
   {
     number: "02",
-    title: "Identification des compétences clés",
-    text: "• Compétences techniques (comme l’utilisation de logiciels, les langues étrangères, les spécialisations)\n• Compétences comportementales (travail en équipe, leadership, communication)\n• Compétences transférables d’un emploi à un autre"
+    title: "Avantages de la formation",
+    text: "Formations pratiques pour t’aider à acquérir de nouvelles compétences - Programmes professionnels adaptés aux exigences des entreprises dans divers secteurs - Opportunités de stages pré-embauche en entreprise pour acquérir de l’expérience pratique - Possibilité d’obtenir un certificat reconnu qui valorise ton dossier professionnel - Suivi et accompagnement par des conseillers emploi pour faciliter ton insertion professionnelle"
   },
   {
     number: "03",
-    title: "Utilisation des tests d’orientation professionnelle",
-    text: "• Passer le test RIASEC pour connaître ton type de personnalité professionnelle (Réaliste, Investigateur, Artistique, Social, Entreprenant, Conventionnel)\n• Analyser les résultats du test et les associer aux emplois adaptés"
+    title: "Plusieurs partenaires",
+    text: "Office de la formation professionnelle - Ministère de l’artisanat - Ministère du tourisme - Ministère de l’agriculture - Secteur de la formation professionnelle - Ministère de la santé - Office de la coopération nationale - Ministère de la pêche maritime"
   },
   {
     number: "04",
-    title: "Création d’un profil de compétences",
-    text: "• Rédiger une liste des compétences clés correspondant aux exigences du marché\n• Identifier les compétences à développer et mettre à jour\n• Élaborer un plan de formation pour améliorer les compétences manquantes"
+    title: "Pour consulter",
+    text: "Pour consulter une formation, rends-toi sur : http://advanced-software/formation/ Tu peux effectuer une recherche selon plusieurs critères (région, ville, organisme de formation...)"
   },
-  {
-    number: "05",
-    title: "Analyse des expériences professionnelles passées",
-    text: "• Identifier les rôles et responsabilités antérieurs et leur adéquation avec les nouvelles opportunités d’emploi\n• Tirer parti des expériences de succès passées pour améliorer ta progression vers des emplois futurs"
-  }
 ];
 
 
-const Step5 = () => {
+
+const Etp6 = () => {
     return (
         <>
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">Étape 2 : Analyse des compétences</h1>
+                    <h1 className="step2-title">Formations organisées par les partenaires</h1>
                 </div>
                 <Grid
                     container
@@ -74,11 +71,13 @@ const Step5 = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <SideLeftRightButtons nextPage="/livret1/step6" />
-                <SideLeftRightButtons prevPage="/livret1/step4" />
+            
+                
+                <SideLeftRightButtons nextPage="/livret2/etp7" />
+                <SideLeftRightButtons prevPage="/livret2/etp5" />
             </div>
         </>
     )
 }
 
-export default Step5;
+export default Etp6;

@@ -8,42 +8,19 @@ import '../../styles/livret1.step2.css';
 
 const data = [
   {
-    number: '01',
-    title: "Objectif de l’étape",
-    text: "Permettre au chercheur d’emploi de créer un dossier professionnel attractif qui augmente ses chances d’embauche"
-  },
-  {
-    number: '02',
-    title: "Amélioration du CV",
-    text: "Utiliser un design professionnel et attrayant,Se concentrer sur les mots-clés recherchés par les employeurs,Mettre en avant clairement les réalisations avec des chiffres et des résultats",
-    
-  },
-  {
-    number: '03',
-    title: "Rédaction d’une lettre de motivation distinctive",
-    text: "Personnaliser la lettre pour chaque offre d’emploi,Expliquer comment le candidat peut apporter de la valeur à l’entreprise,Utiliser un langage professionnel et direct"
-  },
-  {
-    number: '04',
-    title: "Préparation du profil LinkedIn",
-    text: "Choisir une photo de profil appropriée,Rédiger un résumé personnel mettant en avant les expériences et compétences,Interagir avec du contenu professionnel et construire un large réseau de contacts",
-   
-  },
-  {
-    number: '05',
-    title: "Préparation des documents complémentaires",
-    text: "Diplômes académiques et certificats d’expérience,Lettres de recommandation,Exemples de travaux précédents (si demandés)"
-  }
+    title:"Types de réseaux",
+    text: "• Réseau personnel, familial et social : comprend les membres de la famille, amis, voisins et connaissances proches\n• Réseau des plateformes professionnelles : comprend LinkedIn, Instagram ou Facebook pour se connecter avec des professionnels et entreprises\n• Réseau professionnel : anciens collègues, professeurs, superviseurs ou toute personne expérimentée dans ton domaine\n• Réseau professionnel, bénévole et communautaire : activités bénévoles ou associations auxquelles tu participes\n• Réseaux et communication sociale : conférences, ateliers, salons professionnels ou formations"
+   },
 ];
 
 
-const Step7 = () => {
+const Pg3 = () => {
     return (
         <>
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">Étape 4 : Préparer un profil personnel solide</h1>
+                    <h1 className="step2-title">Comment développer mon réseau personnel et professionnel</h1>
                 </div>
                 <Grid
                     container
@@ -76,11 +53,15 @@ const Step7 = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <SideLeftRightButtons nextPage="/livret1/step8" />
-                <SideLeftRightButtons prevPage="/livret1/step6" />
+                <div className="step2-header">
+                    <h2 className="step2-title2">La formation est indispensable pour développer tes compétences et suivre les exigences du marché du travail. Plus tu développes tes compétences, plus tu augmentes tes chances d’obtenir un bon emploi, de renforcer ta confiance en toi, <br />d’affronter les défis et de réaliser tes ambitions.</h2>
+                </div>
+                
+                <SideLeftRightButtons nextPage="/livret3/pg4" />
+                <SideLeftRightButtons prevPage="/livret3/pg2" />
             </div>
         </>
     )
 }
 
-export default Step7;
+export default Pg3;
