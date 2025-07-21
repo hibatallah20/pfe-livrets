@@ -8,41 +8,39 @@ import '../../styles/livret1.step2.css';
 
 const data = [
   {
-    number: "01",
-    title: "Comment définir un parcours professionnel clair",
-    subTitle: "Comment définir",
-    text: "Permettre au chercheur d'emploi de se fixer une vision professionnelle claire et précise, en accord avec ses ambitions et ses capacités"
+    title: "Dépendre uniquement de la recherche traditionnelle",
+    text: "Ne te limite pas aux annonces visibles. Le marché caché demande un effort supplémentaire et la construction d’un réseau efficace."
   },
   {
-    number: "02",
-    title: "Analyse des compétences personnelles",
-    text: "Aider le chercheur d'emploi à identifier ses compétences et aptitudes et à les relier aux emplois disponibles"
+   title: "Manque de préparation",
+    text: "Avant de contacter une entreprise ou un professionnel, sois prêt avec des informations claires sur tes compétences et tes objectifs."
   },
   {
-    number: "03",
-    title: "Méthodes efficaces de recherche d'emploi",
-    text: "Fournir au chercheur d'emploi des outils et méthodes pour accéder aux offres d'emploi disponibles"
+    title: "Négliger le suivi",
+    text: "Le suivi après tout échange est essentiel, mais il doit se faire de manière professionnelle et sans insistance."
   },
   {
-    number: "04",
-    title: "Préparation d'un profil professionnel solide",
-    text: "Permettre au chercheur d'emploi de constituer un dossier professionnel attractif qui augmente ses chances d'embauche"
+  title: "Agir avec désespoir",
+  text: "Présente-toi avec confiance et évite de montrer un besoin urgent de travail, cela pourrait donner une mauvaise impression."
   },
   {
-    number: "05",
-    title: "Conseils pratiques pour définir quel travail rechercher",
-    text: "Nous vous présentons les règles essentielles pour vous aider à organiser et faciliter votre recherche d'emploi"
-  },
+    title: "Communication aléatoire",
+    text: "N’envoie pas de messages génériques ou préécrits. Rends ta communication personnelle et authentique."
+  }
+
 ];
 
 
-const Step2 = () => {
+const Pg5 = () => {
     return (
         <>
         <Navbar/>
             <div className="step2-container">
                 <div className="step2-header">
-                    <h1 className="step2-title">Information importante pour les chercheurs d’emploi</h1>
+                    <h1 className="step2-title">Bonnes pratiques et erreurs à éviter</h1>
+                </div>
+                <div className="step2-header">
+                    <h2 className="step2-title2">Erreurs à éviter lors de la recherche d’opportunités d’emploi sur le marché caché</h2>
                 </div>
                 <Grid
                     container
@@ -75,11 +73,13 @@ const Step2 = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <SideLeftRightButtons nextPage="/livret1/step3" prevPage="/livret1/step1" />
+            
+                
 
+                <SideLeftRightButtons prevPage="/livret3/pg4" />
             </div>
         </>
     )
 }
 
-export default Step2;
+export default Pg5;

@@ -67,7 +67,7 @@ const Pg4 = () => {
                 </Grid>
             
                 
-
+                <SideLeftRightButtons nextPage="/livret3/pg5" />
                 <SideLeftRightButtons prevPage="/livret3/pg3" />
             </div>
         </>

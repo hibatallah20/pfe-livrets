@@ -14,7 +14,7 @@
 }
 
 .livret-card-image {
-  width: 30%;
+  width: 22%;
   min-height: 50%;
   overflow: hidden;
   border-top-left-radius: 16px;
@@ -22,9 +22,10 @@
 }
 
 .livret-card-image img {
-  width: 100%;
-  height: 100%;
+ width: 100%;
+  height: 100%; 
   object-fit: cover;
+  
 }
 
 .livret-card-content {
@@ -35,6 +36,7 @@
   justify-content: center;
   direction: ltr;         
   text-align: left;   
+  
 }
 
 .livret-card-number {

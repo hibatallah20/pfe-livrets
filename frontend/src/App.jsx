@@ -32,6 +32,7 @@ import Pg1 from './pages/livret3/pg1'
 import Pg2 from './pages/livret3/Pg2'
 import Pg3 from './pages/livret3/Pg3'
 import Pg4 from './pages/livret3/Pg4'
+import Pg5 from './pages/livret3/Pg5'
 
 
 const App = () => {
@@ -63,6 +64,7 @@ const App = () => {
         <Route path='/livret3/pg2' element={<Pg2/>}/>
         <Route path='/livret3/pg3' element={<Pg3/>}/>
         <Route path='/livret3/pg4' element={<Pg4/>}/>
+        <Route path='/livret3/pg5' element={<Pg5/>}/>
         <Route path='/livrets' element={<Livrets/>}/>
         <Route path='/joblist' element={<JobsList/>}/>
         <Route path='/job-detail/:id' element={<Jobdetail/>}/>

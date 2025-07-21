@@ -13,7 +13,6 @@ const SideLeftRightButtons = ({ prevPage = null, nextPage = null, sidebarOpen = 
             {nextPage && (
                 <Box className="right-button-container">
                     <IconButton
-                       
                         onClick={() => navigate(nextPage)}
                         className="right-button"
                           style={{ backgroundColor: 'rgba(42, 121, 150, 0.65)' }}
