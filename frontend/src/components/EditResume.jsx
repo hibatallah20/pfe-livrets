@@ -635,19 +635,17 @@ const EditResume = () => {
         })
         .from(element)
         .save();
-  
-      toast.success("PDF downloaded successfully!", { id: toastId });
-      setDownloadSuccess(true);
-      setTimeout(() => setDownloadSuccess(false), 3000);
-  
-    } catch (err) {
-      console.error("PDF error:", err);
-      toast.error(`Failed to generate PDF: ${err.message}`, { id: toastId });
-  
-    } finally {
-      document.getElementById("__pdf_color_override__")?.remove();
-      setIsDownloading(false);
-    }
+      toast.dismiss(toastId);   // Dismiss le toast de chargement ici
+  toast.success("PDF downloaded successfully!");
+  setDownloadSuccess(true);
+  setTimeout(() => setDownloadSuccess(false), 3000);
+} catch (err) {
+  toast.dismiss(toastId);   // Dismiss aussi en cas d'erreur
+  toast.error(`Failed to generate PDF: ${err.message}`);
+} finally {
+  document.getElementById("__pdf_color_override__")?.remove();
+  setIsDownloading(false);
+}
   };
 
   const updateTheme = (theme) => {
